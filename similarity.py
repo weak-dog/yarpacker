@@ -22,7 +22,6 @@ def sim(filePath1,filePath2,fre=0.9,sim=0.95):
                 l3.remove(l3[j])
                 k += 1
                 break
-    print("blockpairs:",blockPairs)
     for blockPair in blockPairs:
         rule=""
         indexs = difflib.SequenceMatcher(None, l1[blockPair[0]][2], l2[blockPair[1]][2]).get_matching_blocks()
@@ -61,7 +60,7 @@ def processRules(ruleStrs,yaraPath):
             for i in range(len(str[0])):
                 if str[0][i]=="?":
                     gapLen+=1
-            if len(str[0])>10:
+            if len(str[0])>15:
                 processResult[processed]=[str[1],len(str[0]),gapLen]
                 fullReverse[processed.replace(" ","")]=processed
         else:
@@ -101,7 +100,7 @@ def processRules(ruleStrs,yaraPath):
                 for i in range(len(processed)):
                     if processed[i] == "?":
                         gapLen += 1
-                if len(processed) > 10:
+                if len(processed) > 20:
                     processResult[processed] = [str[1], len(processed), gapLen]
     return processResult,fullReverse
 
@@ -188,14 +187,13 @@ def normalizeData(data):
         return [1]*len(data)
 
 if __name__=="__main__":
-    sampleDir="D://work//yarpacker//examples//obsidium//"
-    packerName="obsidium"
+    sampleDir="D://work//yarpacker//examples//upx//"
+    packerName="upx"
     simPart = sim(sampleDir+"1.json", sampleDir+"2.json", 0.9)
     processRes,fullReverse=processRules(simPart,sampleDir)
-    print(processRes)
     index=genRules(sampleDir, packerName, processRes)
     checkRes=check(sampleDir,processRes,fullReverse,index)
     choosed=chooseRule(checkRes)
-    genYar(sampleDir+"cheers.yar", packerName, choosed,"and")
+    genYar(sampleDir+packerName+".yar", packerName, choosed,"and")
 
 
