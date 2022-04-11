@@ -1,0 +1,125 @@
+addr:0x3f54ec  reachtimes:189548  size:27  bytes:518b4508c1e80b8b4d000faf038b090fc92b4d0439c88b4d0c7611
+0x3f54ec:	push	ecx
+0x3f54ed:	mov	eax, dword ptr [ebp + 8]
+0x3f54f0:	shr	eax, 0xb
+0x3f54f3:	mov	ecx, dword ptr [ebp]
+0x3f54f6:	imul	eax, dword ptr [ebx]
+0x3f54f9:	mov	ecx, dword ptr [ecx]
+0x3f54fb:	bswap	ecx
+0x3f54fd:	sub	ecx, dword ptr [ebp + 4]
+0x3f5500:	cmp	eax, ecx
+0x3f5502:	mov	ecx, dword ptr [ebp + 0xc]
+0x3f5505:	jbe	0x3f5518
+addr:0x3f552d  reachtimes:189548  size:16  bytes:ff4500c1650808c1650408
+0x3f552d:	inc	dword ptr [ebp]
+0x3f5530:	shl	dword ptr [ebp + 8], 8
+0x3f5534:	shl	dword ptr [ebp + 4], 8
+0x3f5538:	shr	eax, 0x1f
+0x3f553b:	pop	ecx
+0x3f553c:	ret	
+addr:0x3f5507  reachtimes:106997  size:17  bytes:89450831c0b4082b03d3e8010331c0eb0f
+0x3f5507:	mov	dword ptr [ebp + 8], eax
+0x3f550a:	xor	eax, eax
+0x3f550c:	mov	ah, 8
+0x3f550e:	sub	eax, dword ptr [ebx]
+0x3f5510:	shr	eax, cl
+0x3f5512:	add	dword ptr [ebx], eax
+0x3f5514:	xor	eax, eax
+0x3f5516:	jmp	0x3f5527
+addr:0x3f5518  reachtimes:82551  size:21  bytes:0145042945088b03d3e8290383c8ff
+0x3f5518:	add	dword ptr [ebp + 4], eax
+0x3f551b:	sub	dword ptr [ebp + 8], eax
+0x3f551e:	mov	eax, dword ptr [ebx]
+0x3f5520:	shr	eax, cl
+0x3f5522:	sub	dword ptr [ebx], eax
+0x3f5524:	or	eax, 0xffffffff
+0x3f5527:	test	byte ptr [ebp + 0xb], 0xff
+0x3f552b:	jne	0x3f5538
+addr:0x3f553d  reachtimes:62334  size:6  bytes:538d1c93ffd6
+0x3f553d:	push	ebx
+0x3f553e:	lea	ebx, [ebx + edx*4]
+0x3f5541:	call	esi
+addr:0x3f5543  reachtimes:62334  size:4  bytes:5b10d2c3
+0x3f5543:	pop	ebx
+0x3f5544:	adc	dl, dl
+0x3f5546:	ret	
+addr:0x3f5557  reachtimes:22881  size:8  bytes:8d0c48f6c20275ee
+0x3f5557:	lea	ecx, [eax + ecx*2]
+0x3f555a:	test	dl, 2
+0x3f555d:	jne	0x3f554d
+addr:0x3f547f  reachtimes:16572  size:8  bytes:8d0c48f6c21074f3
+0x3f547f:	lea	ecx, [eax + ecx*2]
+0x3f5482:	test	dl, 0x10
+0x3f5485:	je	0x3f547a
+addr:0x3f5437  reachtimes:13056  size:14  bytes:ff450c91aa83c9ff
+0x3f5437:	inc	dword ptr [ebp + 0xc]
+0x3f543a:	xchg	eax, ecx
+0x3f543b:	stosb	byte ptr es:[edi], al
+0x3f543c:	or	ecx, 0xffffffff
+0x3f543f:	lea	ebx, [ebp + ecx*4 + 0x18]
+0x3f5443:	call	esi
+addr:0x3f5424  reachtimes:13055  size:15  bytes:31c941ff4d0c
+0x3f5424:	xor	ecx, ecx
+0x3f5426:	inc	ecx
+0x3f5427:	dec	dword ptr [ebp + 0xc]
+0x3f542a:	lea	ebx, [ebp + ecx*4 + 0xa0]
+0x3f5431:	call	esi
+addr:0x3f5547  reachtimes:9732  size:11  bytes:5031c94189ca
+0x3f5547:	push	eax
+0x3f5548:	xor	ecx, ecx
+0x3f554a:	inc	ecx
+0x3f554b:	mov	edx, ecx
+0x3f554d:	call	0x3f553d
+addr:0x3f5494  reachtimes:5588  size:24  bytes:3d0008000083d9ff83f86083d9ff
+0x3f5494:	cmp	eax, 0x800
+0x3f5499:	sbb	ecx, -1
+0x3f549c:	cmp	eax, 0x60
+0x3f549f:	sbb	ecx, -1
+0x3f54a2:	mov	dword ptr [ebp + 0x10], eax
+0x3f54a5:	push	esi
+0x3f54a6:	mov	esi, edi
+0x3f54a8:	sub	esi, eax
+0x3f54aa:	rep movsb	byte ptr es:[edi], byte ptr [esi]
+addr:0x3f546b  reachtimes:4144  size:4  bytes:49497840
+0x3f546b:	dec	ecx
+0x3f546c:	dec	ecx
+0x3f546d:	js	0x3f54af
+addr:0x3f5487  reachtimes:4143  size:13  bytes:41918d9da0080000e8b3000000
+0x3f5487:	inc	ecx
+0x3f5488:	xchg	eax, ecx
+0x3f5489:	lea	ebx, [ebp + 0x8a0]
+0x3f548f:	call	0x3f5547
+addr:0x3f54c9  reachtimes:2349  size:5  bytes:ac84c075fb
+0x3f54c9:	lodsb	al, byte ptr [esi]
+0x3f54ca:	test	al, al
+0x3f54cc:	jne	0x3f54c9
+addr:0x3f54d4  reachtimes:92  size:5  bytes:5655ff5304
+0x3f54d4:	push	esi
+0x3f54d5:	push	ebp
+0x3f54d6:	call	dword ptr [ebx + 4]
+addr:0x3f54d9  reachtimes:92  size:5  bytes:ab85c075eb
+0x3f54d9:	stosd	dword ptr es:[edi], eax
+0x3f54da:	test	eax, eax
+0x3f54dc:	jne	0x3f54c9
+addr:0x3f54af  reachtimes:5  size:17  bytes:bef67f3f00bb3c573f0055
+0x3f54af:	mov	esi, 0x3f7ff6
+0x3f54b4:	mov	ebx, 0x3f573c
+0x3f54b9:	push	ebp
+0x3f54ba:	inc	esi
+0x3f54bb:	lodsd	eax, dword ptr [esi]
+0x3f54bc:	test	eax, eax
+0x3f54be:	je	0x3f54ea
+addr:0x3f54c0  reachtimes:4  size:4  bytes:9756ff13
+0x3f54c0:	xchg	eax, edi
+0x3f54c1:	push	esi
+0x3f54c2:	call	dword ptr [ebx]
+addr:0x3f53fb  reachtimes:1  size:30  bytes:bd08583f00c745002c013f00ff4d08c6450c058d7d1431c0b40489c1f3abbf9d7c3f0057beec543f00
+0x3f53fb:	mov	ebp, 0x3f5808
+0x3f5400:	mov	dword ptr [ebp], 0x3f012c
+0x3f5407:	dec	dword ptr [ebp + 8]
+0x3f540a:	mov	byte ptr [ebp + 0xc], 5
+0x3f540e:	lea	edi, [ebp + 0x14]
+0x3f5411:	xor	eax, eax
+0x3f5413:	mov	ah, 4
+0x3f5415:	mov	ecx, eax
+0x3f5417:	rep stosd	dword ptr es:[edi], eax

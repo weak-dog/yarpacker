@@ -1,0 +1,13 @@
+addr:0x428098  reachtimes:1  size:17  bytes:b9fcffffff8182b8000000ab000000eb05
+mov reg32, val
+add dword ptr mem, val
+jmp val
+addr:0x4280b9  reachtimes:1  size:8  bytes:894204894210eb01
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+jmp val
+addr:0x428129  reachtimes:1  size:8  bytes:5133c9e959030000
+push reg32
+xor reg32, reg32
+jmp val
+addr

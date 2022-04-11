@@ -1,0 +1,1 @@
+[["mov reg32, val add dword ptr mem, val jmp val ", 1, "b9fcffffff8182b8000000ab000000eb05"], ["mov dword ptr mem, reg32 mov dword ptr mem, reg32 jmp val ", 1, "894204894210eb01"], ["push reg32 xor reg32, reg32 jmp val ", 1, "5133c9e959030000"]]
