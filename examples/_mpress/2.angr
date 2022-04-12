@@ -1,0 +1,745 @@
+addr:0x424bed  reachtimes:137295  size:41  bytes:8b8424a00000008bd52b44245c039424a00000008d740500
+0x424bed:	mov	eax, dword ptr [esp + 0xa0]
+0x424bf4:	mov	edx, ebp
+0x424bf6:	sub	eax, dword ptr [esp + 0x5c]
+0x424bfa:	add	edx, dword ptr [esp + 0xa0]
+0x424c01:	lea	esi, [ebp + eax]
+0x424c05:	mov	al, byte ptr [esi]
+0x424c07:	inc	esi
+0x424c08:	mov	byte ptr [esp + 0x73], al
+0x424c0c:	mov	byte ptr [edx], al
+0x424c0e:	inc	edx
+0x424c0f:	inc	dword ptr [esp + 0x74]
+0x424c13:	dec	ecx
+0x424c14:	je	0x424c25
+addr:0x4241a9  reachtimes:135916  size:10  bytes:8bd9ac4124fe3ce875f2
+0x4241a9:	mov	ebx, ecx
+0x4241ab:	lodsb	al, byte ptr [esi]
+0x4241ac:	inc	ecx
+0x4241ad:	and	al, 0xfe
+0x4241af:	cmp	al, 0xe8
+0x4241b1:	jne	0x4241a5
+addr:0x424c16  reachtimes:133546  size:13  bytes:8bac24a4000000396c247472e2
+0x424c16:	mov	ebp, dword ptr [esp + 0xa4]
+0x424c1d:	cmp	dword ptr [esp + 0x74], ebp
+0x424c21:	jb	0x424c05
+addr:0x42446b  reachtimes:39576  size:19  bytes:8d14368b6c241403ea817c2448ffffff007718
+0x42446b:	lea	edx, [esi + esi]
+0x42446e:	mov	ebp, dword ptr [esp + 0x14]
+0x424472:	add	ebp, edx
+0x424474:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x42447c:	ja	0x424496
+addr:0x424496  reachtimes:35138  size:21  bytes:8b442448668b4d00c1e80b0fb7f10fafc63bf87319
+0x424496:	mov	eax, dword ptr [esp + 0x48]
+0x42449a:	mov	cx, word ptr [ebp]
+0x42449e:	shr	eax, 0xb
+0x4244a1:	movzx	esi, cx
+0x4244a4:	imul	eax, esi
+0x4244a7:	cmp	edi, eax
+0x4244a9:	jae	0x4244c4
+addr:0x424989  reachtimes:25783  size:20  bytes:8b442448668b16c1e80b0fb7ca0fafc13bf87318
+0x424989:	mov	eax, dword ptr [esp + 0x48]
+0x42498d:	mov	dx, word ptr [esi]
+0x424990:	shr	eax, 0xb
+0x424993:	movzx	ecx, dx
+0x424996:	imul	eax, ecx
+0x424999:	cmp	edi, eax
+0x42499b:	jae	0x4249b5
+addr:0x4244ab  reachtimes:22897  size:25  bytes:89442448b8000800002bc68bf2c1f8058d040866894500eb9f
+0x4244ab:	mov	dword ptr [esp + 0x48], eax
+0x4244af:	mov	eax, 0x800
+0x4244b4:	sub	eax, esi
+0x4244b6:	mov	esi, edx
+0x4244b8:	sar	eax, 5
+0x4244bb:	lea	eax, [eax + ecx]
+0x4244be:	mov	word ptr [ebp], ax
+0x4244c2:	jmp	0x424463
+addr:0x424320  reachtimes:18817  size:39  bytes:c1642448080fb603c1e708430bf8
+0x424320:	shl	dword ptr [esp + 0x48], 8
+0x424325:	movzx	eax, byte ptr [ebx]
+0x424328:	shl	edi, 8
+0x42432b:	inc	ebx
+0x42432c:	or	edi, eax
+0x42432e:	mov	eax, dword ptr [esp + 0x48]
+0x424332:	mov	dx, word ptr [ebp]
+0x424336:	shr	eax, 0xb
+0x424339:	movzx	ecx, dx
+0x42433c:	imul	eax, ecx
+0x42433f:	cmp	edi, eax
+0x424341:	jae	0x424524
+addr:0x4244c4  reachtimes:16678  size:24  bytes:294424482bf88bc18d720166c1e805662bc866894d00eb87
+0x4244c4:	sub	dword ptr [esp + 0x48], eax
+0x4244c8:	sub	edi, eax
+0x4244ca:	mov	eax, ecx
+0x4244cc:	lea	esi, [edx + 1]
+0x4244cf:	shr	ax, 5
+0x4244d3:	sub	cx, ax
+0x4244d6:	mov	word ptr [ebp], cx
+0x4244da:	jmp	0x424463
+addr:0x424922  reachtimes:14552  size:79  bytes:2bf02bf88bc28974244866c1e805c744242c10000000662bd0c7442430080000006689510281c104020000894c2410
+0x424922:	sub	esi, eax
+0x424924:	sub	edi, eax
+0x424926:	mov	eax, edx
+0x424928:	mov	dword ptr [esp + 0x48], esi
+0x42492c:	shr	ax, 5
+0x424930:	mov	dword ptr [esp + 0x2c], 0x10
+0x424938:	sub	dx, ax
+0x42493b:	mov	dword ptr [esp + 0x30], 8
+0x424943:	mov	word ptr [ecx + 2], dx
+0x424947:	add	ecx, 0x204
+0x42494d:	mov	dword ptr [esp + 0x10], ecx
+0x424951:	mov	ecx, dword ptr [esp + 0x30]
+0x424955:	mov	edx, 1
+0x42495a:	mov	dword ptr [esp + 0x28], ecx
+0x42495e:	lea	ebp, [edx + edx]
+0x424961:	mov	esi, dword ptr [esp + 0x10]
+0x424965:	add	esi, ebp
+0x424967:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x42496f:	ja	0x424989
+addr:0x4249b5  reachtimes:14552  size:32  bytes:294424482bf88bc266c1e805662bd06689168d5501
+0x4249b5:	sub	dword ptr [esp + 0x48], eax
+0x4249b9:	sub	edi, eax
+0x4249bb:	mov	eax, edx
+0x4249bd:	shr	ax, 5
+0x4249c1:	sub	dx, ax
+0x4249c4:	mov	word ptr [esi], dx
+0x4249c7:	lea	edx, [ebp + 1]
+0x4249ca:	mov	esi, dword ptr [esp + 0x28]
+0x4249ce:	dec	esi
+0x4249cf:	mov	dword ptr [esp + 0x28], esi
+0x4249d3:	jne	0x42495e
+addr:0x424a01  reachtimes:13584  size:55  bytes:b803000000
+0x424a01:	mov	eax, 3
+0x424a06:	mov	esi, dword ptr [esp + 0x78]
+0x424a0a:	shl	eax, 7
+0x424a0d:	mov	dword ptr [esp + 0x24], 6
+0x424a15:	lea	eax, [eax + esi + 0x360]
+0x424a1c:	mov	dword ptr [esp + 8], eax
+0x424a20:	mov	eax, 1
+0x424a25:	lea	ebp, [eax + eax]
+0x424a28:	mov	esi, dword ptr [esp + 8]
+0x424a2c:	add	esi, ebp
+0x424a2e:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x424a36:	ja	0x424a50
+addr:0x424a7c  reachtimes:13584  size:32  bytes:294424482bf88bc266c1e805662bd08d4501668916
+0x424a7c:	sub	dword ptr [esp + 0x48], eax
+0x424a80:	sub	edi, eax
+0x424a82:	mov	eax, edx
+0x424a84:	shr	ax, 5
+0x424a88:	sub	dx, ax
+0x424a8b:	lea	eax, [ebp + 1]
+0x424a8e:	mov	word ptr [esi], dx
+0x424a91:	mov	ebp, dword ptr [esp + 0x24]
+0x424a95:	dec	ebp
+0x424a96:	mov	dword ptr [esp + 0x24], ebp
+0x424a9a:	jne	0x424a25
+addr:0x424127  reachtimes:11257  size:41  bytes:58055a0b00008b3003f02bc08bfe66adc1e00c8bc850ad2bc803f18bc85751
+0x424127:	pop	eax
+0x424128:	add	eax, 0xb5a
+0x42412d:	mov	esi, dword ptr [eax]
+0x42412f:	add	esi, eax
+0x424131:	sub	eax, eax
+0x424133:	mov	edi, esi
+0x424135:	lodsw	ax, word ptr [esi]
+0x424137:	shl	eax, 0xc
+0x42413a:	mov	ecx, eax
+0x42413c:	push	eax
+0x42413d:	lodsd	eax, dword ptr [esi]
+0x42413e:	sub	ecx, eax
+0x424140:	add	esi, ecx
+0x424142:	mov	ecx, eax
+0x424144:	push	edi
+0x424145:	push	ecx
+0x424146:	dec	ecx
+0x424147:	mov	al, byte ptr [ecx + edi + 6]
+0x42414b:	mov	byte ptr [ecx + esi], al
+0x42414e:	jne	0x424146
+addr:0x4242f0  reachtimes:9818  size:38  bytes:8b7424742374246c8b4424608b542478c1e0048974244403c6817c2448ffffff008d2c427718
+0x4242f0:	mov	esi, dword ptr [esp + 0x74]
+0x4242f4:	and	esi, dword ptr [esp + 0x6c]
+0x4242f8:	mov	eax, dword ptr [esp + 0x60]
+0x4242fc:	mov	edx, dword ptr [esp + 0x78]
+0x424300:	shl	eax, 4
+0x424303:	mov	dword ptr [esp + 0x44], esi
+0x424307:	add	eax, esi
+0x424309:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x424311:	lea	ebp, [edx + eax*2]
+0x424314:	ja	0x42432e
+addr:0x424c25  reachtimes:9817  size:17  bytes:8b8424a4000000394424740f82baf6ffff
+0x424c25:	mov	eax, dword ptr [esp + 0xa4]
+0x424c2c:	cmp	dword ptr [esp + 0x74], eax
+0x424c30:	jb	0x4242f0
+addr:0x424a64  reachtimes:8256  size:24  bytes:89442448b8000800002bc1c1f8058d04106689068bc5eb15
+0x424a64:	mov	dword ptr [esp + 0x48], eax
+0x424a68:	mov	eax, 0x800
+0x424a6d:	sub	eax, ecx
+0x424a6f:	sar	eax, 5
+0x424a72:	lea	eax, [eax + edx]
+0x424a75:	mov	word ptr [esi], ax
+0x424a78:	mov	eax, ebp
+0x424a7a:	jmp	0x424a91
+addr:0x424b1a  reachtimes:8199  size:62  bytes:8b442478c1e6048934240544060000c74424200400000089442404
+0x424b1a:	mov	eax, dword ptr [esp + 0x78]
+0x424b1e:	shl	esi, 4
+0x424b21:	mov	dword ptr [esp], esi
+0x424b24:	add	eax, 0x644
+0x424b29:	mov	dword ptr [esp + 0x20], 4
+0x424b31:	mov	dword ptr [esp + 4], eax
+0x424b35:	mov	dword ptr [esp + 0x1c], 1
+0x424b3d:	mov	eax, 1
+0x424b42:	mov	ebp, dword ptr [esp + 4]
+0x424b46:	add	eax, eax
+0x424b48:	mov	dword ptr [esp + 0x18], eax
+0x424b4c:	add	ebp, eax
+0x424b4e:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x424b56:	ja	0x424b70
+addr:0x424ba0  reachtimes:8199  size:50  bytes:294424482bf88bc266c1e805662bd08b442418668955008b54241c40091424
+0x424ba0:	sub	dword ptr [esp + 0x48], eax
+0x424ba4:	sub	edi, eax
+0x424ba6:	mov	eax, edx
+0x424ba8:	shr	ax, 5
+0x424bac:	sub	dx, ax
+0x424baf:	mov	eax, dword ptr [esp + 0x18]
+0x424bb3:	mov	word ptr [ebp], dx
+0x424bb7:	mov	edx, dword ptr [esp + 0x1c]
+0x424bbb:	inc	eax
+0x424bbc:	or	dword ptr [esp], edx
+0x424bbf:	mov	ecx, dword ptr [esp + 0x20]
+0x424bc3:	shl	dword ptr [esp + 0x1c], 1
+0x424bc7:	dec	ecx
+0x424bc8:	mov	dword ptr [esp + 0x20], ecx
+0x424bcc:	jne	0x424b42
+addr:0x4243a1  reachtimes:8187  size:65  bytes:8b4424742b44245c8b9424a00000000fb6041089442440
+0x4243a1:	mov	eax, dword ptr [esp + 0x74]
+0x4243a5:	sub	eax, dword ptr [esp + 0x5c]
+0x4243a9:	mov	edx, dword ptr [esp + 0xa0]
+0x4243b0:	movzx	eax, byte ptr [eax + edx]
+0x4243b4:	mov	dword ptr [esp + 0x40], eax
+0x4243b8:	shl	dword ptr [esp + 0x40], 1
+0x4243bc:	mov	ecx, dword ptr [esp + 0x40]
+0x4243c0:	lea	edx, [esi + esi]
+0x4243c3:	mov	ebp, dword ptr [esp + 0x14]
+0x4243c7:	and	ecx, 0x100
+0x4243cd:	cmp	dword ptr [esp + 0x48], 0xffffff
+0x4243d5:	lea	eax, [ebp + ecx*2]
+0x4243d9:	mov	dword ptr [esp + 0x3c], ecx
+0x4243dd:	lea	ebp, [edx + eax]
+0x4243e0:	ja	0x4243fa
+addr:0x4243fa  reachtimes:7665  size:24  bytes:8b442448668b8d00020000c1e80b0fb7f10fafc63bf87323
+0x4243fa:	mov	eax, dword ptr [esp + 0x48]
+0x4243fe:	mov	cx, word ptr [ebp + 0x200]
+0x424405:	shr	eax, 0xb
+0x424408:	movzx	esi, cx
+0x42440b:	imul	eax, esi
+0x42440e:	cmp	edi, eax
+0x424410:	jae	0x424435
+addr:0x424b70  reachtimes:7218  size:21  bytes:8b442448668b5500c1e80b0fb7f20fafc63bf8731b
+0x424b70:	mov	eax, dword ptr [esp + 0x48]
+0x424b74:	mov	dx, word ptr [ebp]
+0x424b78:	shr	eax, 0xb
+0x424b7b:	movzx	esi, dx
+0x424b7e:	imul	eax, esi
+0x424b81:	cmp	edi, eax
+0x424b83:	jae	0x424ba0
+addr:0x42499d  reachtimes:6945  size:24  bytes:89442448b8000800002bc1c1f8058d04108bd5668906eb15
+0x42499d:	mov	dword ptr [esp + 0x48], eax
+0x4249a1:	mov	eax, 0x800
+0x4249a6:	sub	eax, ecx
+0x4249a8:	sar	eax, 5
+0x4249ab:	lea	eax, [eax + edx]
+0x4249ae:	mov	edx, ebp
+0x4249b0:	mov	word ptr [esi], ax
+0x4249b3:	jmp	0x4249ca
+addr:0x424347  reachtimes:5971  size:90  bytes:89442448b8000800002bc18a4c2464c1f805be010000008d04100fb6542473668945008b442474234424688b6c2478d3e0b9080000002b4c2464d3fa03c269c000060000837c2460068d84286c0e0000894424140f8eca000000
+0x424347:	mov	dword ptr [esp + 0x48], eax
+0x42434b:	mov	eax, 0x800
+0x424350:	sub	eax, ecx
+0x424352:	mov	cl, byte ptr [esp + 0x64]
+0x424356:	sar	eax, 5
+0x424359:	mov	esi, 1
+0x42435e:	lea	eax, [eax + edx]
+0x424361:	movzx	edx, byte ptr [esp + 0x73]
+0x424366:	mov	word ptr [ebp], ax
+0x42436a:	mov	eax, dword ptr [esp + 0x74]
+0x42436e:	and	eax, dword ptr [esp + 0x68]
+0x424372:	mov	ebp, dword ptr [esp + 0x78]
+0x424376:	shl	eax, cl
+0x424378:	mov	ecx, 8
+0x42437d:	sub	ecx, dword ptr [esp + 0x64]
+0x424381:	sar	edx, cl
+0x424383:	add	eax, edx
+0x424385:	imul	eax, eax, 0x600
+0x42438b:	cmp	dword ptr [esp + 0x60], 6
+0x424390:	lea	eax, [eax + ebp + 0xe6c]
+0x424397:	mov	dword ptr [esp + 0x14], eax
+0x42439b:	jle	0x42446b
+addr:0x4244dc  reachtimes:5970  size:32  bytes:8b5424748bc68b8c24a00000008844247388041142837c246003895424747f0d
+0x4244dc:	mov	edx, dword ptr [esp + 0x74]
+0x4244e0:	mov	eax, esi
+0x4244e2:	mov	ecx, dword ptr [esp + 0xa0]
+0x4244e9:	mov	byte ptr [esp + 0x73], al
+0x4244ed:	mov	byte ptr [ecx + edx], al
+0x4244f0:	inc	edx
+0x4244f1:	cmp	dword ptr [esp + 0x60], 3
+0x4244f6:	mov	dword ptr [esp + 0x74], edx
+0x4244fa:	jg	0x424509
+addr:0x424b04  reachtimes:4791  size:12  bytes:d16c244803f63b7c24487207
+0x424b04:	shr	dword ptr [esp + 0x48], 1
+0x424b08:	add	esi, esi
+0x424b0a:	cmp	edi, dword ptr [esp + 0x48]
+0x424b0e:	jb	0x424b17
+addr:0x424412  reachtimes:4528  size:33  bytes:89442448b8000800002bc68bf2c1f805837c243c008d0408668985000200007422
+0x424412:	mov	dword ptr [esp + 0x48], eax
+0x424416:	mov	eax, 0x800
+0x42441b:	sub	eax, esi
+0x42441d:	mov	esi, edx
+0x42441f:	sar	eax, 5
+0x424422:	cmp	dword ptr [esp + 0x3c], 0
+0x424427:	lea	eax, [eax + ecx]
+0x42442a:	mov	word ptr [ebp + 0x200], ax
+0x424431:	je	0x424455
+addr:0x42455b  reachtimes:3857  size:38  bytes:0fb603c1e708c1e108430bf8
+0x42455b:	movzx	eax, byte ptr [ebx]
+0x42455e:	shl	edi, 8
+0x424561:	shl	ecx, 8
+0x424564:	inc	ebx
+0x424565:	or	edi, eax
+0x424567:	mov	ebp, dword ptr [esp + 0x38]
+0x42456b:	mov	eax, ecx
+0x42456d:	shr	eax, 0xb
+0x424570:	mov	dx, word ptr [ebp + 0x180]
+0x424577:	movzx	ebp, dx
+0x42457a:	imul	eax, ebp
+0x42457d:	cmp	edi, eax
+0x42457f:	jae	0x4245d3
+addr:0x424524  reachtimes:3847  size:45  bytes:8b4c24482bf88b7424602bc88bc266c1e805662bd081f9ffffff00668955008b6c24788d747500897424387716
+0x424524:	mov	ecx, dword ptr [esp + 0x48]
+0x424528:	sub	edi, eax
+0x42452a:	mov	esi, dword ptr [esp + 0x60]
+0x42452e:	sub	ecx, eax
+0x424530:	mov	eax, edx
+0x424532:	shr	ax, 5
+0x424536:	sub	dx, ax
+0x424539:	cmp	ecx, 0xffffff
+0x42453f:	mov	word ptr [ebp], dx
+0x424543:	mov	ebp, dword ptr [esp + 0x78]
+0x424547:	lea	esi, [ebp + esi*2]
+0x42454b:	mov	dword ptr [esp + 0x38], esi
+0x42454f:	ja	0x424567
+addr:0x4249d5  reachtimes:3749  size:32  bytes:8a4c2430b801000000d3e02bd00354242c837c2460038954240c0f8fe7010000
+0x4249d5:	mov	cl, byte ptr [esp + 0x30]
+0x4249d9:	mov	eax, 1
+0x4249de:	shl	eax, cl
+0x4249e0:	sub	edx, eax
+0x4249e2:	add	edx, dword ptr [esp + 0x2c]
+0x4249e6:	cmp	dword ptr [esp + 0x60], 3
+0x4249eb:	mov	dword ptr [esp + 0xc], edx
+0x4249ef:	jg	0x424bdc
+addr:0x424bdc  reachtimes:3749  size:17  bytes:8b4c240c8b6c247483c102396c245c7760
+0x424bdc:	mov	ecx, dword ptr [esp + 0xc]
+0x424be0:	mov	ebp, dword ptr [esp + 0x74]
+0x424be4:	add	ecx, 2
+0x424be7:	cmp	dword ptr [esp + 0x5c], ebp
+0x424beb:	ja	0x424c4d
+addr:0x424b85  reachtimes:3660  size:27  bytes:89442448b8000800002bc6c1f8058d0410668945008b442418eb1f
+0x424b85:	mov	dword ptr [esp + 0x48], eax
+0x424b89:	mov	eax, 0x800
+0x424b8e:	sub	eax, esi
+0x424b90:	sar	eax, 5
+0x424b93:	lea	eax, [eax + edx]
+0x424b96:	mov	word ptr [ebp], ax
+0x424b9a:	mov	eax, dword ptr [esp + 0x18]
+0x424b9e:	jmp	0x424bbf
+addr:0x424435  reachtimes:3659  size:32  bytes:294424482bf88bc18d720166c1e805662bc8837c243c0066898d00020000740e
+0x424435:	sub	dword ptr [esp + 0x48], eax
+0x424439:	sub	edi, eax
+0x42443b:	mov	eax, ecx
+0x42443d:	lea	esi, [edx + 1]
+0x424440:	shr	ax, 5
+0x424444:	sub	cx, ax
+0x424447:	cmp	dword ptr [esp + 0x3c], 0
+0x42444c:	mov	word ptr [ebp + 0x200], cx
+0x424453:	je	0x424463
+addr:0x424865  reachtimes:3544  size:18  bytes:668b118bc6c1e80b0fb7ea0fafc53bf8732f
+0x424865:	mov	dx, word ptr [ecx]
+0x424868:	mov	eax, esi
+0x42486a:	shr	eax, 0xb
+0x42486d:	movzx	ebp, dx
+0x424870:	imul	eax, ebp
+0x424873:	cmp	edi, eax
+0x424875:	jae	0x4248a6
+addr:0x424877  reachtimes:2744  size:47  bytes:89442448b8000800002bc5c164244404c1f805c744242c000000008d04106689018b4424448d4c0804894c2410eb72
+0x424877:	mov	dword ptr [esp + 0x48], eax
+0x42487b:	mov	eax, 0x800
+0x424880:	sub	eax, ebp
+0x424882:	shl	dword ptr [esp + 0x44], 4
+0x424887:	sar	eax, 5
+0x42488a:	mov	dword ptr [esp + 0x2c], 0
+0x424892:	lea	eax, [eax + edx]
+0x424895:	mov	word ptr [ecx], ax
+0x424898:	mov	eax, dword ptr [esp + 0x44]
+0x42489c:	lea	ecx, [eax + ecx + 4]
+0x4248a0:	mov	dword ptr [esp + 0x10], ecx
+0x4248a4:	jmp	0x424918
+addr:0x424b10  reachtimes:2654  size:10  bytes:2b7c244883ce01
+0x424b10:	sub	edi, dword ptr [esp + 0x48]
+0x424b14:	or	esi, 1
+0x424b17:	dec	edx
+0x424b18:	jne	0x424ae2
+addr:0x424298  reachtimes:2615  size:56  bytes:8b442478
+0x424298:	mov	eax, dword ptr [esp + 0x78]
+0x42429c:	mov	word ptr [eax], 0x400
+0x4242a1:	add	eax, 2
+0x4242a4:	loop	0x42429c
+0x4242a6:	mov	ebx, dword ptr [esp + 0x94]
+0x4242ad:	xor	edi, edi
+0x4242af:	mov	dword ptr [esp + 0x48], 0xffffffff
+0x4242b7:	mov	edx, ebx
+0x4242b9:	add	edx, dword ptr [esp + 0x98]
+0x4242c0:	mov	dword ptr [esp + 0x4c], edx
+0x4242c4:	xor	edx, edx
+0x4242c6:	cmp	ebx, dword ptr [esp + 0x4c]
+0x4242ca:	je	0x424c4d
+addr:0x424581  reachtimes:2264  size:82  bytes:8bf0b8000800002bc58b6c2458c1f8058b4c24548d04108b542438894c24508b4c2478668982800100008b44245c896c24548944245833c0837c2460060f9fc081c1640600008d044089442460e974020000
+0x424581:	mov	esi, eax
+0x424583:	mov	eax, 0x800
+0x424588:	sub	eax, ebp
+0x42458a:	mov	ebp, dword ptr [esp + 0x58]
+0x42458e:	sar	eax, 5
+0x424591:	mov	ecx, dword ptr [esp + 0x54]
+0x424595:	lea	eax, [eax + edx]
+0x424598:	mov	edx, dword ptr [esp + 0x38]
+0x42459c:	mov	dword ptr [esp + 0x50], ecx
+0x4245a0:	mov	ecx, dword ptr [esp + 0x78]
+0x4245a4:	mov	word ptr [edx + 0x180], ax
+0x4245ab:	mov	eax, dword ptr [esp + 0x5c]
+0x4245af:	mov	dword ptr [esp + 0x54], ebp
+0x4245b3:	mov	dword ptr [esp + 0x58], eax
+0x4245b7:	xor	eax, eax
+0x4245b9:	cmp	dword ptr [esp + 0x60], 6
+0x4245be:	setg	al
+0x4245c1:	add	ecx, 0x664
+0x4245c7:	lea	eax, [eax + eax*2]
+0x4245ca:	mov	dword ptr [esp + 0x60], eax
+0x4245ce:	jmp	0x424847
+addr:0x4249f5  reachtimes:2264  size:12  bytes:834424600783fa038bc27e05
+0x4249f5:	add	dword ptr [esp + 0x60], 7
+0x4249fa:	cmp	edx, 3
+0x4249fd:	mov	eax, edx
+0x4249ff:	jle	0x424a06
+addr:0x424a9c  reachtimes:2264  size:15  bytes:8d50c083fa038914240f8e27010000
+0x424a9c:	lea	edx, [eax - 0x40]
+0x424a9f:	cmp	edx, 3
+0x424aa2:	mov	dword ptr [esp], edx
+0x424aa5:	jle	0x424bd2
+addr:0x424bd2  reachtimes:2264  size:10  bytes:8b3424468974245c745a
+0x424bd2:	mov	esi, dword ptr [esp]
+0x424bd5:	inc	esi
+0x424bd6:	mov	dword ptr [esp + 0x5c], esi
+0x424bda:	je	0x424c36
+addr:0x424aab  reachtimes:2210  size:24  bytes:8bc28bf2d1f883e6018d48ff83ce0283fa0d894c24207f1c
+0x424aab:	mov	eax, edx
+0x424aad:	mov	esi, edx
+0x424aaf:	sar	eax, 1
+0x424ab1:	and	esi, 1
+0x424ab4:	lea	ecx, [eax - 1]
+0x424ab7:	or	esi, 2
+0x424aba:	cmp	edx, 0xd
+0x424abd:	mov	dword ptr [esp + 0x20], ecx
+0x424ac1:	jg	0x424adf
+addr:0x4245ff  reachtimes:2070  size:42  bytes:0fb603c1e708c1e608430bf8
+0x4245ff:	movzx	eax, byte ptr [ebx]
+0x424602:	shl	edi, 8
+0x424605:	shl	esi, 8
+0x424608:	inc	ebx
+0x424609:	or	edi, eax
+0x42460b:	mov	ebp, dword ptr [esp + 0x38]
+0x42460f:	mov	edx, esi
+0x424611:	shr	edx, 0xb
+0x424614:	mov	cx, word ptr [ebp + 0x198]
+0x42461b:	movzx	eax, cx
+0x42461e:	imul	edx, eax
+0x424621:	cmp	edi, edx
+0x424623:	jae	0x42470c
+addr:0x4245d3  reachtimes:1583  size:34  bytes:8bf12bf82bf08bc266c1e8058b4c2438662bd081feffffff00668991800100007716
+0x4245d3:	mov	esi, ecx
+0x4245d5:	sub	edi, eax
+0x4245d7:	sub	esi, eax
+0x4245d9:	mov	eax, edx
+0x4245db:	shr	ax, 5
+0x4245df:	mov	ecx, dword ptr [esp + 0x38]
+0x4245e3:	sub	dx, ax
+0x4245e6:	cmp	esi, 0xffffff
+0x4245ec:	mov	word ptr [ecx + 0x180], dx
+0x4245f3:	ja	0x42460b
+addr:0x4247f1  reachtimes:1485  size:94  bytes:8bf12bf82bf08bc266c1e805662bd08b442438668990c80100008b5424548b44245089542450
+0x4247f1:	mov	esi, ecx
+0x4247f3:	sub	edi, eax
+0x4247f5:	sub	esi, eax
+0x4247f7:	mov	eax, edx
+0x4247f9:	shr	ax, 5
+0x4247fd:	sub	dx, ax
+0x424800:	mov	eax, dword ptr [esp + 0x38]
+0x424804:	mov	word ptr [eax + 0x1c8], dx
+0x42480b:	mov	edx, dword ptr [esp + 0x54]
+0x42480f:	mov	eax, dword ptr [esp + 0x50]
+0x424813:	mov	dword ptr [esp + 0x50], edx
+0x424817:	mov	ecx, dword ptr [esp + 0x58]
+0x42481b:	mov	dword ptr [esp + 0x54], ecx
+0x42481f:	mov	ebp, dword ptr [esp + 0x5c]
+0x424823:	mov	dword ptr [esp + 0x5c], eax
+0x424827:	mov	dword ptr [esp + 0x58], ebp
+0x42482b:	xor	eax, eax
+0x42482d:	cmp	dword ptr [esp + 0x60], 6
+0x424832:	mov	ecx, dword ptr [esp + 0x78]
+0x424836:	setg	al
+0x424839:	add	ecx, 0xa68
+0x42483f:	lea	eax, [eax + eax*2 + 8]
+0x424843:	mov	dword ptr [esp + 0x60], eax
+0x424847:	cmp	esi, 0xffffff
+0x42484d:	ja	0x424865
+addr:0x424629  reachtimes:1298  size:62  bytes:bd000800008bf22be8c7442434000800008bc5c1f8058d04088b4c2438668981980100008b4424608b4c2444c1e0050344247881faffffff008d2c487716
+0x424629:	mov	ebp, 0x800
+0x42462e:	mov	esi, edx
+0x424630:	sub	ebp, eax
+0x424632:	mov	dword ptr [esp + 0x34], 0x800
+0x42463a:	mov	eax, ebp
+0x42463c:	sar	eax, 5
+0x42463f:	lea	eax, [eax + ecx]
+0x424642:	mov	ecx, dword ptr [esp + 0x38]
+0x424646:	mov	word ptr [ecx + 0x198], ax
+0x42464d:	mov	eax, dword ptr [esp + 0x60]
+0x424651:	mov	ecx, dword ptr [esp + 0x44]
+0x424655:	shl	eax, 5
+0x424658:	add	eax, dword ptr [esp + 0x78]
+0x42465c:	cmp	edx, 0xffffff
+0x424662:	lea	ebp, [eax + ecx*2]
+0x424665:	ja	0x42467d
+addr:0x42467d  reachtimes:1249  size:22  bytes:668b95e00100008bc6c1e80b0fb7ca0fafc13bf87360
+0x42467d:	mov	dx, word ptr [ebp + 0x1e0]
+0x424684:	mov	eax, esi
+0x424686:	shr	eax, 0xb
+0x424689:	movzx	ecx, dx
+0x42468c:	imul	eax, ecx
+0x42468f:	cmp	edi, eax
+0x424691:	jae	0x4246f3
+addr:0x4246f3  reachtimes:1200  size:25  bytes:2bf02bf88bc266c1e805662bd0668995e0010000e91f010000
+0x4246f3:	sub	esi, eax
+0x4246f5:	sub	edi, eax
+0x4246f7:	mov	eax, edx
+0x4246f9:	shr	ax, 5
+0x4246fd:	sub	dx, ax
+0x424700:	mov	word ptr [ebp + 0x1e0], dx
+0x424707:	jmp	0x42482b
+addr:0x4248a6  reachtimes:1005  size:24  bytes:2bf02bf88bc266c1e805662bd081feffffff006689117716
+0x4248a6:	sub	esi, eax
+0x4248a8:	sub	edi, eax
+0x4248aa:	mov	eax, edx
+0x4248ac:	shr	ax, 5
+0x4248b0:	sub	dx, ax
+0x4248b3:	cmp	esi, 0xffffff
+0x4248b9:	mov	word ptr [ecx], dx
+0x4248bc:	ja	0x4248d4
+addr:0x424ac3  reachtimes:989  size:28  bytes:8b6c2478d3e603d28934248d4475002bc2055e05000089442404eb56
+0x424ac3:	mov	ebp, dword ptr [esp + 0x78]
+0x424ac7:	shl	esi, cl
+0x424ac9:	add	edx, edx
+0x424acb:	mov	dword ptr [esp], esi
+0x424ace:	lea	eax, [ebp + esi*2]
+0x424ad2:	sub	eax, edx
+0x424ad4:	add	eax, 0x55e
+0x424ad9:	mov	dword ptr [esp + 4], eax
+0x424add:	jmp	0x424b35
+addr:0x4241b3  reachtimes:837  size:9  bytes:4383c104ad0bc07806
+0x4241b3:	inc	ebx
+0x4241b4:	add	ecx, 4
+0x4241b7:	lodsd	eax, dword ptr [esi]
+0x4241b8:	or	eax, eax
+0x4241ba:	js	0x4241c2
+addr:0x4248d4  reachtimes:807  size:19  bytes:668b51028bc6c1e80b0fb7ea0fafc53bf8733b
+0x4248d4:	mov	dx, word ptr [ecx + 2]
+0x4248d8:	mov	eax, esi
+0x4248da:	shr	eax, 0xb
+0x4248dd:	movzx	ebp, dx
+0x4248e0:	imul	eax, ebp
+0x4248e3:	cmp	edi, eax
+0x4248e5:	jae	0x424922
+addr:0x4241c8  reachtimes:761  size:7  bytes:2bc38946fcebd6
+0x4241c8:	sub	eax, ebx
+0x4241ca:	mov	dword ptr [esi - 4], eax
+0x4241cd:	jmp	0x4241a5
+addr:0x4248e7  reachtimes:344  size:59  bytes:89442448b8000800002bc5c164244404c1f805c744242c080000008d04108b542444668941028d8c0a04010000894c2410
+0x4248e7:	mov	dword ptr [esp + 0x48], eax
+0x4248eb:	mov	eax, 0x800
+0x4248f0:	sub	eax, ebp
+0x4248f2:	shl	dword ptr [esp + 0x44], 4
+0x4248f7:	sar	eax, 5
+0x4248fa:	mov	dword ptr [esp + 0x2c], 8
+0x424902:	lea	eax, [eax + edx]
+0x424905:	mov	edx, dword ptr [esp + 0x44]
+0x424909:	mov	word ptr [ecx + 2], ax
+0x42490d:	lea	ecx, [edx + ecx + 0x104]
+0x424914:	mov	dword ptr [esp + 0x10], ecx
+0x424918:	mov	dword ptr [esp + 0x30], 3
+0x424920:	jmp	0x424951
+addr:0x42470c  reachtimes:285  size:32  bytes:8bc12bf266c1e8058b6c2438662bc82bfa81feffffff0066898d980100007716
+0x42470c:	mov	eax, ecx
+0x42470e:	sub	esi, edx
+0x424710:	shr	ax, 5
+0x424714:	mov	ebp, dword ptr [esp + 0x38]
+0x424718:	sub	cx, ax
+0x42471b:	sub	edi, edx
+0x42471d:	cmp	esi, 0xffffff
+0x424723:	mov	word ptr [ebp + 0x198], cx
+0x42472a:	ja	0x424742
+addr:0x424742  reachtimes:250  size:26  bytes:8b4c24388bc6c1e80b668b91b00100000fb7ca0fafc13bf87323
+0x424742:	mov	ecx, dword ptr [esp + 0x38]
+0x424746:	mov	eax, esi
+0x424748:	shr	eax, 0xb
+0x42474b:	mov	dx, word ptr [ecx + 0x1b0]
+0x424752:	movzx	ecx, dx
+0x424755:	imul	eax, ecx
+0x424758:	cmp	edi, eax
+0x42475a:	jae	0x42477f
+addr:0x42475c  reachtimes:227  size:35  bytes:8bf0b8000800002bc18b6c2438c1f8058d0410668985b00100008b442458e9a0000000
+0x42475c:	mov	esi, eax
+0x42475e:	mov	eax, 0x800
+0x424763:	sub	eax, ecx
+0x424765:	mov	ebp, dword ptr [esp + 0x38]
+0x424769:	sar	eax, 5
+0x42476c:	lea	eax, [eax + edx]
+0x42476f:	mov	word ptr [ebp + 0x1b0], ax
+0x424776:	mov	eax, dword ptr [esp + 0x58]
+0x42477a:	jmp	0x42481f
+addr:0x424693  reachtimes:98  size:38  bytes:294c2434c17c2434058b74243489442448837c2474008d0416668985e00100000f8494050000
+0x424693:	sub	dword ptr [esp + 0x34], ecx
+0x424697:	sar	dword ptr [esp + 0x34], 5
+0x42469c:	mov	esi, dword ptr [esp + 0x34]
+0x4246a0:	mov	dword ptr [esp + 0x48], eax
+0x4246a4:	cmp	dword ptr [esp + 0x74], 0
+0x4246a9:	lea	eax, [esi + edx]
+0x4246ac:	mov	word ptr [ebp + 0x1e0], ax
+0x4246b3:	je	0x424c4d
+addr:0x4246b9  reachtimes:98  size:58  bytes:33c0837c2460068bac24a00000008b5424740f9fc08d440009894424608b4424742b44245c8a042888442473884415004289542474e932050000
+0x4246b9:	xor	eax, eax
+0x4246bb:	cmp	dword ptr [esp + 0x60], 6
+0x4246c0:	mov	ebp, dword ptr [esp + 0xa0]
+0x4246c7:	mov	edx, dword ptr [esp + 0x74]
+0x4246cb:	setg	al
+0x4246ce:	lea	eax, [eax + eax + 9]
+0x4246d2:	mov	dword ptr [esp + 0x60], eax
+0x4246d6:	mov	eax, dword ptr [esp + 0x74]
+0x4246da:	sub	eax, dword ptr [esp + 0x5c]
+0x4246de:	mov	al, byte ptr [eax + ebp]
+0x4246e1:	mov	byte ptr [esp + 0x73], al
+0x4246e5:	mov	byte ptr [ebp + edx], al
+0x4246e9:	inc	edx
+0x4246ea:	mov	dword ptr [esp + 0x74], edx
+0x4246ee:	jmp	0x424c25
+addr:0x42477f  reachtimes:58  size:34  bytes:8bce2bf82bc88bc266c1e805662bd08b44243881f9ffffff00668990b00100007716
+0x42477f:	mov	ecx, esi
+0x424781:	sub	edi, eax
+0x424783:	sub	ecx, eax
+0x424785:	mov	eax, edx
+0x424787:	shr	ax, 5
+0x42478b:	sub	dx, ax
+0x42478e:	mov	eax, dword ptr [esp + 0x38]
+0x424792:	cmp	ecx, 0xffffff
+0x424798:	mov	word ptr [eax + 0x1b0], dx
+0x42479f:	ja	0x4247b7
+addr:0x4247b7  reachtimes:48  size:26  bytes:8b7424388bc1c1e80b668b96c80100000fb7ea0fafc53bf87320
+0x4247b7:	mov	esi, dword ptr [esp + 0x38]
+0x4247bb:	mov	eax, ecx
+0x4247bd:	shr	eax, 0xb
+0x4247c0:	mov	dx, word ptr [esi + 0x1c8]
+0x4247c7:	movzx	ebp, dx
+0x4247ca:	imul	eax, ebp
+0x4247cd:	cmp	edi, eax
+0x4247cf:	jae	0x4247f1
+addr:0x4247d1  reachtimes:29  size:32  bytes:8bf0b8000800002bc58b6c2438c1f8058d0410668985c80100008b442454eb26
+0x4247d1:	mov	esi, eax
+0x4247d3:	mov	eax, 0x800
+0x4247d8:	sub	eax, ebp
+0x4247da:	mov	ebp, dword ptr [esp + 0x38]
+0x4247de:	sar	eax, 5
+0x4247e1:	lea	eax, [eax + edx]
+0x4247e4:	mov	word ptr [ebp + 0x1c8], ax
+0x4247eb:	mov	eax, dword ptr [esp + 0x54]
+0x4247ef:	jmp	0x424817
+addr:0x4242d0  reachtimes:5  size:15  bytes:0fb603c1e70842430bf883fa047ee7
+0x4242d0:	movzx	eax, byte ptr [ebx]
+0x4242d3:	shl	edi, 8
+0x4242d6:	inc	edx
+0x4242d7:	inc	ebx
+0x4242d8:	or	edi, eax
+0x4242da:	cmp	edx, 4
+0x4242dd:	jle	0x4242c6
+addr:0x4241cf  reachtimes:3  size:37  bytes:e800000000
+0x4241cf:	call	0x4241d4
+0x4241d4:	pop	edi
+0x4241d5:	add	edi, 0xffffff4d
+0x4241db:	mov	al, 0xe9
+0x4241dd:	stosb	byte ptr es:[edi], al
+0x4241de:	mov	eax, 0xb56
+0x4241e3:	stosd	dword ptr es:[edi], eax
+0x4241e4:	call	0x4241e9
+0x4241e9:	pop	eax
+0x4241ea:	add	eax, 0xa98
+0x4241ef:	jmp	0x424c7c
+addr:0x424150  reachtimes:1  size:70  bytes:2bc0ac8bc880e1f0240fc1e10c8ae8ac0bc85102cdbd00fdffffd3e559588bdc8da46c90f1ffff512bc951518bcc51668b17c1e20c525783c104515083c1045651e85e000000
+0x424150:	sub	eax, eax
+0x424152:	lodsb	al, byte ptr [esi]
+0x424153:	mov	ecx, eax
+0x424155:	and	cl, 0xf0
+0x424158:	and	al, 0xf
+0x42415a:	shl	ecx, 0xc
+0x42415d:	mov	ch, al
+0x42415f:	lodsb	al, byte ptr [esi]
+0x424160:	or	ecx, eax
+0x424162:	push	ecx
+0x424163:	add	cl, ch
+0x424165:	mov	ebp, 0xfffffd00
+0x42416a:	shl	ebp, cl
+0x42416c:	pop	ecx
+0x42416d:	pop	eax
+0x42416e:	mov	ebx, esp
+0x424170:	lea	esp, [esp + ebp*2 - 0xe70]
+0x424177:	push	ecx
+0x424178:	sub	ecx, ecx
+0x42417a:	push	ecx
+0x42417b:	push	ecx
+0x42417c:	mov	ecx, esp
+0x42417e:	push	ecx
+0x42417f:	mov	dx, word ptr [edi]
+0x424182:	shl	edx, 0xc
+0x424185:	push	edx
+0x424186:	push	edi
+0x424187:	add	ecx, 4
+0x42418a:	push	ecx
+0x42418b:	push	eax
+0x42418c:	add	ecx, 4
+0x42418f:	push	esi
+0x424190:	push	ecx
+0x424191:	call	0x4241f4
+addr:0x424196  reachtimes:1  size:19  bytes:8be35e5a2bc0890432b4102bd02bc9
+0x424196:	mov	esp, ebx
+0x424198:	pop	esi
+0x424199:	pop	edx
+0x42419a:	sub	eax, eax
+0x42419c:	mov	dword ptr [edx + esi], eax
+0x42419f:	mov	ah, 0x10
+0x4241a1:	sub	edx, eax
+0x4241a3:	sub	ecx, ecx
+0x4241a5:	cmp	ecx, edx
+0x4241a7:	jae	0x4241cf
+addr:0x4242df  reachtimes:1  size:17  bytes:8b8c24a4000000394c24740f8365090000
+0x4242df:	mov	ecx, dword ptr [esp + 0xa4]
+0x4242e6:	cmp	dword ptr [esp + 0x74], ecx
+0x4242ea:	jae	0x424c55
+addr:0x424c74  reachtimes:1  size:8  bytes:83c47c5b5e5f5dc3
+0x424c74:	add	esp, 0x7c
+0x424c77:	pop	ebx
+0x424c78:	pop	esi
+0x424c79:	pop	edi
+0x424c7a:	pop	ebp
+0x424c7b:	ret	

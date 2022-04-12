@@ -88,6 +88,14 @@ def flat(norFilePath):
     fp.close()
 
 if __name__ == '__main__':
-    exeFilePath=input("exeFilePath:")
-    norFilePath=normalizer.normalize(bytes_handler(exeFilePath))
-    flat(norFilePath)
+    exeDir="D://work//yarpacker//examples//upx//"
+    configureNum=2
+    for i in range(configureNum):
+        exeFilePath1 = exeDir + "p" + str(i + 1) + "_1.exe"
+        exeFilePath2 = exeDir + "p" + str(i + 1) + "_2.exe"
+        norFilePath1=normalizer.normalize(bytes_handler(exeFilePath1))
+        flat(norFilePath1)
+        print(1)
+        norFilePath2 = normalizer.normalize(bytes_handler(exeFilePath2))
+        flat(norFilePath2)
+        print(2)

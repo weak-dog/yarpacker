@@ -1,0 +1,125 @@
+addr:0x42341d  reachtimes:69576  size:9  bytes:8a02428807474975f7
+0x42341d:	mov	al, byte ptr [edx]
+0x42341f:	inc	edx
+0x423420:	mov	byte ptr [edi], al
+0x423422:	inc	edi
+0x423423:	dec	ecx
+0x423424:	jne	0x42341d
+addr:0x42342c  reachtimes:16310  size:15  bytes:8b0283c204890783c70483e90477f1
+0x42342c:	mov	eax, dword ptr [edx]
+0x42342e:	add	edx, 4
+0x423431:	mov	dword ptr [edi], eax
+0x423433:	add	edi, 4
+0x423436:	sub	ecx, 4
+0x423439:	ja	0x42342c
+addr:0x423388  reachtimes:6464  size:10  bytes:8a0646880747
+0x423388:	mov	al, byte ptr [esi]
+0x42338a:	inc	esi
+0x42338b:	mov	byte ptr [edi], al
+0x42338d:	inc	edi
+0x42338e:	add	ebx, ebx
+0x423390:	jne	0x423399
+addr:0x4233ab  reachtimes:5036  size:6  bytes:11c001db73ef
+0x4233ab:	adc	eax, eax
+0x4233ad:	add	ebx, ebx
+0x4233af:	jae	0x4233a0
+addr:0x42339b  reachtimes:3093  size:9  bytes:b801000000
+0x42339b:	mov	eax, 1
+0x4233a0:	add	ebx, ebx
+0x4233a2:	jne	0x4233ab
+addr:0x4233bc  reachtimes:3093  size:7  bytes:31c983e803720d
+0x4233bc:	xor	ecx, ecx
+0x4233be:	sub	eax, 3
+0x4233c1:	jb	0x4233d0
+addr:0x4233db  reachtimes:2990  size:6  bytes:11c901db7507
+0x4233db:	adc	ecx, ecx
+0x4233dd:	add	ebx, ebx
+0x4233df:	jne	0x4233e8
+addr:0x4233c3  reachtimes:2853  size:11  bytes:c1e0088a064683f0ff7474
+0x4233c3:	shl	eax, 8
+0x4233c6:	mov	al, byte ptr [esi]
+0x4233c8:	inc	esi
+0x4233c9:	xor	eax, 0xffffffff
+0x4233cc:	je	0x423442
+addr:0x4233f8  reachtimes:2251  size:6  bytes:11c901db73ef
+0x4233f8:	adc	ecx, ecx
+0x4233fa:	add	ebx, ebx
+0x4233fc:	jae	0x4233ed
+addr:0x42340c  reachtimes:2065  size:17  bytes:81fd00f3ffff83d1018d142f83fdfc760f
+0x42340c:	cmp	ebp, 0xfffff300
+0x423412:	adc	ecx, 1
+0x423415:	lea	edx, [edi + ebp]
+0x423418:	cmp	ebp, -4
+0x42341b:	jbe	0x42342c
+addr:0x423392  reachtimes:737  size:9  bytes:8b1e83eefc11db
+0x423392:	mov	ebx, dword ptr [esi]
+0x423394:	sub	esi, -4
+0x423397:	adc	ebx, ebx
+0x423399:	jb	0x423388
+addr:0x4233b3  reachtimes:225  size:9  bytes:8b1e83eefc11db73e4
+0x4233b3:	mov	ebx, dword ptr [esi]
+0x4233b5:	sub	esi, -4
+0x4233b8:	adc	ebx, ebx
+0x4233ba:	jae	0x4233a0
+addr:0x423466  reachtimes:85  size:7  bytes:8a074708c074dc
+0x423466:	mov	al, byte ptr [edi]
+0x423468:	inc	edi
+0x423469:	or	al, al
+0x42346b:	je	0x423449
+addr:0x42346d  reachtimes:85  size:6  bytes:89f95748f2ae55ff9648320200
+0x42346d:	mov	ecx, edi
+0x42346f:	push	edi
+0x423470:	dec	eax
+0x423471:	repne scasb	al, byte ptr es:[edi]
+addr:0x42347e  reachtimes:85  size:7  bytes:890383c304ebe1
+0x42347e:	mov	dword ptr [ebx], eax
+0x423480:	add	ebx, 4
+0x423483:	jmp	0x423466
+addr:0x4234b9  reachtimes:32  size:12  bytes:58618d442480
+0x4234b9:	pop	eax
+0x4234ba:	popal	
+0x4234bb:	lea	eax, [esp - 0x80]
+0x4234bf:	push	0
+0x4234c1:	cmp	esp, eax
+0x4234c3:	jne	0x4234bf
+addr:0x423442  reachtimes:5  size:13  bytes:5e8dbe00100200
+0x423442:	pop	esi
+0x423443:	lea	edi, [esi + 0x21000]
+0x423449:	mov	eax, dword ptr [edi]
+0x42344b:	or	eax, eax
+0x42344d:	je	0x42348b
+addr:0x42344f  reachtimes:4  size:22  bytes:8b5f048d8430dc31020001f35083c708ff9640320200
+0x42344f:	mov	ebx, dword ptr [edi + 4]
+0x423452:	lea	eax, [eax + esi + 0x231dc]
+0x423459:	add	ebx, esi
+0x42345b:	push	eax
+0x42345c:	add	edi, 8
+0x42345f:	call	dword ptr [esi + 0x23240]
+addr:0x423370  reachtimes:1  size:18  bytes:60be000042008dbe0010feff5783cdffeb10
+0x423370:	pushal	
+0x423371:	mov	esi, 0x420000
+0x423376:	lea	edi, [esi - 0x1f000]
+0x42337c:	push	edi
+0x42337d:	or	ebp, 0xffffffff
+0x423380:	jmp	0x423392
+addr:0x42348b  reachtimes:1  size:25  bytes:8bae4c3202008dbe00f0ffffbb0010000050546a045357ffd5
+0x42348b:	mov	ebp, dword ptr [esi + 0x2324c]
+0x423491:	lea	edi, [esi - 0x1000]
+0x423497:	mov	ebx, 0x1000
+0x42349c:	push	eax
+0x42349d:	push	esp
+0x42349e:	push	4
+0x4234a0:	push	ebx
+0x4234a1:	push	edi
+0x4234a2:	call	ebp
+addr:0x4234a4  reachtimes:1  size:21  bytes:8d870f02000080207f8060287f585054505357ffd5
+0x4234a4:	lea	eax, [edi + 0x20f]
+0x4234aa:	and	byte ptr [eax], 0x7f
+0x4234ad:	and	byte ptr [eax + 0x28], 0x7f
+0x4234b1:	pop	eax
+0x4234b2:	push	eax
+0x4234b3:	push	esp
+0x4234b4:	push	eax
+0x4234b5:	push	ebx
+0x4234b6:	push	edi
+0x4234b7:	call	ebp

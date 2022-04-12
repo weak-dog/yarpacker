@@ -1,0 +1,205 @@
+addr:0x422307  reachtimes:130104  size:25  bytes:8b7df003c7895dec
+0x422307:	mov	edi, dword ptr [ebp - 0x10]
+0x42230a:	add	eax, edi
+0x42230c:	mov	dword ptr [ebp - 0x14], ebx
+0x42230f:	mov	ebx, dword ptr [ebp - 8]
+0x422312:	mov	cl, byte ptr [eax]
+0x422314:	inc	dword ptr [ebp - 8]
+0x422317:	inc	eax
+0x422318:	dec	dword ptr [ebp - 0x14]
+0x42231b:	mov	byte ptr [edi + ebx], cl
+0x42231e:	jne	0x42230f
+addr:0x42216a  reachtimes:128844  size:10  bytes:8bd9ac4124fe3ce875f2
+0x42216a:	mov	ebx, ecx
+0x42216c:	lodsb	al, byte ptr [esi]
+0x42216d:	inc	ecx
+0x42216e:	and	al, 0xfe
+0x422170:	cmp	al, 0xe8
+0x422172:	jne	0x422166
+addr:0x422127  reachtimes:11519  size:41  bytes:58059f0200008b3003f02bc08bfe66adc1e00c8bc850ad2bc803f18bc85751
+0x422127:	pop	eax
+0x422128:	add	eax, 0x29f
+0x42212d:	mov	esi, dword ptr [eax]
+0x42212f:	add	esi, eax
+0x422131:	sub	eax, eax
+0x422133:	mov	edi, esi
+0x422135:	lodsw	ax, word ptr [esi]
+0x422137:	shl	eax, 0xc
+0x42213a:	mov	ecx, eax
+0x42213c:	push	eax
+0x42213d:	lodsd	eax, dword ptr [esi]
+0x42213e:	sub	ecx, eax
+0x422140:	add	esi, ecx
+0x422142:	mov	ecx, eax
+0x422144:	push	edi
+0x422145:	push	ecx
+0x422146:	dec	ecx
+0x422147:	mov	al, byte ptr [ecx + edi + 6]
+0x42214b:	mov	byte ptr [ecx + esi], al
+0x42214e:	jne	0x422146
+addr:0x4221e1  reachtimes:7716  size:37  bytes:8a443201c0e904c0e0040ac8
+0x4221e1:	mov	al, byte ptr [edx + esi + 1]
+0x4221e5:	shr	cl, 4
+0x4221e8:	shl	al, 4
+0x4221eb:	or	cl, al
+0x4221ed:	inc	esi
+0x4221ee:	and	dword ptr [ebp - 0xc], 0
+0x4221f2:	mov	byte ptr [ebp - 2], cl
+0x4221f5:	movzx	eax, byte ptr [ebp - 1]
+0x4221f9:	mov	edi, dword ptr [ebp + 8]
+0x4221fc:	sub	edi, eax
+0x4221fe:	cmp	esi, edi
+0x422200:	jae	0x4223a6
+addr:0x42232f  reachtimes:7715  size:44  bytes:0fb6443201c1eb04c1e0040bd8
+0x42232f:	movzx	eax, byte ptr [edx + esi + 1]
+0x422334:	shr	ebx, 4
+0x422337:	shl	eax, 4
+0x42233a:	or	ebx, eax
+0x42233c:	mov	edi, dword ptr [ebp - 8]
+0x42233f:	mov	eax, dword ptr [ebp - 0x10]
+0x422342:	inc	dword ptr [ebp - 8]
+0x422345:	mov	byte ptr [eax + edi], bl
+0x422348:	inc	esi
+0x422349:	inc	dword ptr [ebp - 0xc]
+0x42234c:	shl	cl, 1
+0x42234e:	cmp	dword ptr [ebp - 0xc], 8
+0x422352:	mov	byte ptr [ebp - 2], cl
+0x422355:	jl	0x4221f5
+addr:0x422325  reachtimes:5063  size:10  bytes:807dff000fb61c32740d
+0x422325:	cmp	byte ptr [ebp - 1], 0
+0x422329:	movzx	ebx, byte ptr [edx + esi]
+0x42232d:	je	0x42233c
+addr:0x42220e  reachtimes:2652  size:9  bytes:807dff008b1c327403
+0x42220e:	cmp	byte ptr [ebp - 1], 0
+0x422212:	mov	ebx, dword ptr [edx + esi]
+0x422215:	je	0x42221a
+addr:0x4222a1  reachtimes:2652  size:32  bytes:33db668b1c3281e3ff0f0000
+0x4222a1:	xor	ebx, ebx
+0x4222a3:	mov	bx, word ptr [edx + esi]
+0x4222a7:	and	ebx, 0xfff
+0x4222ad:	movzx	eax, byte ptr [ebp - 1]
+0x4222b1:	xor	byte ptr [ebp - 1], 1
+0x4222b5:	add	esi, eax
+0x4222b7:	mov	eax, ebx
+0x4222b9:	and	eax, 0xf
+0x4222bc:	cmp	eax, 0xf
+0x4222bf:	je	0x4222c6
+addr:0x4222fe  reachtimes:2652  size:9  bytes:8b45f82bc785db7442
+0x4222fe:	mov	eax, dword ptr [ebp - 8]
+0x422301:	sub	eax, edi
+0x422303:	test	ebx, ebx
+0x422305:	je	0x422349
+addr:0x42224c  reachtimes:2651  size:11  bytes:83e303c1ef0283eb007437
+0x42224c:	and	ebx, 3
+0x42224f:	shr	edi, 2
+0x422252:	sub	ebx, 0
+0x422255:	je	0x42228e
+addr:0x42221a  reachtimes:1326  size:18  bytes:81e3ffff0f0046817df8810800008bfb7320
+0x42221a:	and	ebx, 0xfffff
+0x422220:	inc	esi
+0x422221:	cmp	dword ptr [ebp - 8], 0x881
+0x422228:	mov	edi, ebx
+0x42222a:	jae	0x42224c
+addr:0x422298  reachtimes:1326  size:9  bytes:0fb71c32c1eb04eb0c
+0x422298:	movzx	ebx, word ptr [edx + esi]
+0x42229c:	shr	ebx, 4
+0x42229f:	jmp	0x4222ad
+addr:0x422281  reachtimes:1056  size:13  bytes:81e7ff03000003f083c741ebb3
+0x422281:	and	edi, 0x3ff
+0x422287:	add	esi, eax
+0x422289:	add	edi, 0x41
+0x42228c:	jmp	0x422241
+addr:0x4223a6  reachtimes:965  size:17  bytes:0fb645ff8b4d082bc83bf10f8221feffff
+0x4223a6:	movzx	eax, byte ptr [ebp - 1]
+0x4223aa:	mov	ecx, dword ptr [ebp + 8]
+0x4223ad:	sub	ecx, eax
+0x4223af:	cmp	esi, ecx
+0x4223b1:	jb	0x4221d8
+addr:0x4221d8  reachtimes:964  size:9  bytes:807dff008a0c32740c
+0x4221d8:	cmp	byte ptr [ebp - 1], 0
+0x4221dc:	mov	cl, byte ptr [edx + esi]
+0x4221df:	je	0x4221ed
+addr:0x422272  reachtimes:727  size:15  bytes:81e7ff3f000081c74104000046eb11
+0x422272:	and	edi, 0x3fff
+0x422278:	add	edi, 0x441
+0x42227e:	inc	esi
+0x42227f:	jmp	0x422292
+addr:0x422174  reachtimes:557  size:9  bytes:4383c104ad0bc07806
+0x422174:	inc	ebx
+0x422175:	add	ecx, 4
+0x422178:	lodsd	eax, dword ptr [esi]
+0x422179:	or	eax, eax
+0x42217b:	js	0x422183
+addr:0x422189  reachtimes:516  size:7  bytes:2bc38946fcebd6
+0x422189:	sub	eax, ebx
+0x42218b:	mov	dword ptr [esi - 4], eax
+0x42218e:	jmp	0x422166
+addr:0x4222c6  reachtimes:201  size:9  bytes:4681fbff0f00007408
+0x4222c6:	inc	esi
+0x4222c7:	cmp	ebx, 0xfff
+0x4222cd:	je	0x4222d7
+addr:0x4222cf  reachtimes:185  size:8  bytes:c1eb0483c312eb27
+0x4222cf:	shr	ebx, 4
+0x4222d2:	add	ebx, 0x12
+0x4222d5:	jmp	0x4222fe
+addr:0x422260  reachtimes:16  size:18  bytes:81e7ffff03008d74300181c741440000ebcf
+0x422260:	and	edi, 0x3ffff
+0x422266:	lea	esi, [eax + esi + 1]
+0x42226a:	add	edi, 0x4441
+0x422270:	jmp	0x422241
+addr:0x4222ea  reachtimes:16  size:20  bytes:0fb70432
+0x4222ea:	movzx	eax, word ptr [edx + esi]
+0x4222ee:	inc	esi
+0x4222ef:	lea	ebx, [eax + 0x111]
+0x4222f5:	inc	esi
+0x4222f6:	cmp	ebx, 0x10110
+0x4222fc:	je	0x42235d
+addr:0x4222dd  reachtimes:6  size:13  bytes:8b0432c1e80425ffff0000eb04
+0x4222dd:	mov	eax, dword ptr [edx + esi]
+0x4222e0:	shr	eax, 4
+0x4222e3:	and	eax, 0xffff
+0x4222e8:	jmp	0x4222ee
+addr:0x422190  reachtimes:3  size:37  bytes:e800000000
+0x422190:	call	0x422195
+0x422195:	pop	edi
+0x422196:	add	edi, 0xffffff8c
+0x42219c:	mov	al, 0xe9
+0x42219e:	stosb	byte ptr es:[edi], al
+0x42219f:	mov	eax, 0x29b
+0x4221a4:	stosd	dword ptr es:[edi], eax
+0x4221a5:	call	0x4221aa
+0x4221aa:	pop	eax
+0x4221ab:	add	eax, 0x21c
+0x4221b0:	jmp	0x4223c1
+addr:0x422150  reachtimes:1  size:9  bytes:8bd68bcfe85c000000
+0x422150:	mov	edx, esi
+0x422152:	mov	ecx, edi
+0x422154:	call	0x4221b5
+addr:0x422159  reachtimes:1  size:17  bytes:5e5a2bc0890432b4102bd02bc9
+0x422159:	pop	esi
+0x42215a:	pop	edx
+0x42215b:	sub	eax, eax
+0x42215d:	mov	dword ptr [edx + esi], eax
+0x422160:	mov	ah, 0x10
+0x422162:	sub	edx, eax
+0x422164:	sub	ecx, ecx
+0x422166:	cmp	ecx, edx
+0x422168:	jae	0x422190
+addr:0x4221b5  reachtimes:1  size:33  bytes:558bec83ec148a025633f646397508894df088018975f8c645ff000f86e3010000
+0x4221b5:	push	ebp
+0x4221b6:	mov	ebp, esp
+0x4221b8:	sub	esp, 0x14
+0x4221bb:	mov	al, byte ptr [edx]
+0x4221bd:	push	esi
+0x4221be:	xor	esi, esi
+0x4221c0:	inc	esi
+0x4221c1:	cmp	dword ptr [ebp + 8], esi
+0x4221c4:	mov	dword ptr [ebp - 0x10], ecx
+0x4221c7:	mov	byte ptr [ecx], al
+0x4221c9:	mov	dword ptr [ebp - 8], esi
+0x4221cc:	mov	byte ptr [ebp - 1], 0
+0x4221d0:	jbe	0x4223b9
+addr:0x42222c  reachtimes:1  size:7  bytes:d1eff6c3017414
+0x42222c:	shr	edi, 1
+0x42222e:	test	bl, 1
+0x422231:	je	0x422247

@@ -105,7 +105,7 @@ def processRules(ruleStrs,yaraPath):
     return processResult,fullReverse
 
 def genYar(rulePath,ruleName,strList,logic):
-    f=open(rulePath,"w")
+    f=open(rulePath,"a")
     f.write("rule " + ruleName + "\n")
     f.write("{\n")
     f.write("\tstrings:\n")
@@ -119,6 +119,7 @@ def genYar(rulePath,ruleName,strList,logic):
         f.write(" "+logic+" $str"+str(i))
     f.write("\n")
     f.write("}")
+    f.write("\n")
     f.close()
 
 def genRules(ruleDir,packerName,ruleDict):
@@ -132,11 +133,11 @@ def genRules(ruleDir,packerName,ruleDict):
         index+=1
     return index
 
-def check(ruleDir,processRes,fullReverse,index):
+def check(ruleDir,processRes,fullReverse,index,configure):
     file1=open(ruleDir+"full.yar")
     rules = yara.compile(file=file1)
     file1.close()
-    file2=open(ruleDir+"3.exe", "rb")
+    file2=open(ruleDir+"p"+str(configure+1)+"_3.exe","rb")
     matches = rules.match(data=file2.read())
     file2.close()
     res = [binascii.b2a_hex(i[2]).decode() for i in matches[0].strings]
@@ -146,7 +147,7 @@ def check(ruleDir,processRes,fullReverse,index):
         file3=open(rulePath)
         rules = yara.compile(file=file3)
         file3.close()
-        file4=open(ruleDir + "3.exe", "rb")
+        file4 = open(ruleDir + "p" + str(configure + 1) + "_3.exe", "rb")
         matches = rules.match(data=file4.read())
         file4.close()
         if len(matches):
@@ -187,13 +188,14 @@ def normalizeData(data):
         return [1]*len(data)
 
 if __name__=="__main__":
-    sampleDir="D://work//yarpacker//examples//aspack//"
-    packerName="aspack"
-    simPart = sim(sampleDir+"1.json", sampleDir+"2.json", 0.9)
-    processRes,fullReverse=processRules(simPart,sampleDir)
-    index=genRules(sampleDir, packerName, processRes)
-    checkRes=check(sampleDir,processRes,fullReverse,index)
-    choosed=chooseRule(checkRes)
-    genYar(sampleDir+packerName+".yar", packerName, choosed,"and")
-
+    sampleDir="D://work//yarpacker//examples//upx//"
+    configuration=2
+    for i in range(configuration):
+        packerName="upx"+str(i+1)
+        simPart=sim(sampleDir+"p"+str(i+1)+"_1.json", sampleDir+"p"+str(i+1)+"_2.json", 0.9)
+        processRes, fullReverse = processRules(simPart, sampleDir)
+        index = genRules(sampleDir, packerName, processRes)
+        checkRes = check(sampleDir, processRes, fullReverse, index,i)
+        choosed = chooseRule(checkRes)
+        genYar(sampleDir + "upx.yar", packerName, choosed, "and")
 
