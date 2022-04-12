@@ -187,8 +187,8 @@ def normalizeData(data):
         return [1]*len(data)
 
 if __name__=="__main__":
-    sampleDir="D://work//yarpacker//examples//upx//"
-    packerName="upx"
+    sampleDir="D://work//yarpacker//examples//aspack//"
+    packerName="aspack"
     simPart = sim(sampleDir+"1.json", sampleDir+"2.json", 0.9)
     processRes,fullReverse=processRules(simPart,sampleDir)
     index=genRules(sampleDir, packerName, processRes)

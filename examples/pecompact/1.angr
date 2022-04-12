@@ -1,0 +1,127 @@
+addr:0x4229e4  reachtimes:2190  size:5  bytes:13c04975f6
+0x4229e4:	adc	eax, eax
+0x4229e6:	dec	ecx
+0x4229e7:	jne	0x4229df
+addr:0x4229a5  reachtimes:1165  size:23  bytes:53555733db4333ed8bc3
+0x4229a5:	push	ebx
+0x4229a6:	push	ebp
+0x4229a7:	push	edi
+0x4229a8:	xor	ebx, ebx
+0x4229aa:	inc	ebx
+0x4229ab:	xor	ebp, ebp
+0x4229ad:	mov	eax, ebx
+0x4229af:	lea	edi, [ebp + ebx]
+0x4229b3:	mov	ebp, ebx
+0x4229b5:	mov	ebx, edi
+0x4229b7:	call	0x422a0d
+addr:0x4229be  reachtimes:596  size:13  bytes:8d5c3d0003c78befe842000000
+0x4229be:	lea	ebx, [ebp + edi]
+0x4229c2:	add	eax, edi
+0x4229c4:	mov	ebp, edi
+0x4229c6:	call	0x422a0d
+addr:0x4229cd  reachtimes:425  size:7  bytes:5f5d5b2bc17309
+0x4229cd:	pop	edi
+0x4229ce:	pop	ebp
+0x4229cf:	pop	ebx
+0x4229d0:	sub	eax, ecx
+0x4229d2:	jae	0x4229dd
+addr:0x4229ef  reachtimes:425  size:25  bytes:8be83d0180000083d9ff3d8107000083d9ff
+0x4229ef:	mov	ebp, eax
+0x4229f1:	cmp	eax, 0x8001
+0x4229f6:	sbb	ecx, -1
+0x4229f9:	cmp	eax, 0x781
+0x4229fe:	sbb	ecx, -1
+0x422a01:	push	esi
+0x422a02:	mov	esi, edi
+0x422a04:	sub	esi, eax
+0x422a06:	rep movsb	byte ptr es:[edi], byte ptr [esi]
+addr:0x422a11  reachtimes:208  size:7  bytes:92ad9203d242
+0x422a11:	xchg	eax, edx
+0x422a12:	lodsd	eax, dword ptr [esi]
+0x422a13:	xchg	eax, edx
+0x422a14:	add	edx, edx
+0x422a16:	inc	edx
+0x422a17:	ret	
+addr:0x42297d  reachtimes:1  size:17  bytes:608b7424248b7c2428fcad33c985c07411
+0x42297d:	pushal	
+0x42297e:	mov	esi, dword ptr [esp + 0x24]
+0x422982:	mov	edi, dword ptr [esp + 0x28]
+0x422986:	cld	
+0x422987:	lodsd	eax, dword ptr [esi]
+0x422988:	xor	ecx, ecx
+0x42298a:	test	eax, eax
+0x42298c:	je	0x42299f
+addr:0x42298e  reachtimes:1  size:13  bytes:33d28d1c38
+0x42298e:	xor	edx, edx
+0x422990:	lea	ebx, [eax + edi]
+0x422993:	movsb	byte ptr es:[edi], byte ptr [esi]
+0x422994:	mov	cl, 3
+0x422996:	call	0x422a0d
+addr:0x422a2a  reachtimes:1  size:12  bytes:2b7c2428897c241c61c20c00
+0x422a2a:	sub	edi, dword ptr [esp + 0x28]
+0x422a2e:	mov	dword ptr [esp + 0x1c], edi
+0x422a32:	popal	
+0x422a33:	ret	0xc
+addr:0x422a5c  reachtimes:1  size:35  bytes:b8e11742f08d889e1200108941018b5424048b520cc602e983c2052bca894afc33c0c3
+0x422a5c:	mov	eax, 0xf04217e1
+0x422a61:	lea	ecx, [eax + 0x1000129e]
+0x422a67:	mov	dword ptr [ecx + 1], eax
+0x422a6a:	mov	edx, dword ptr [esp + 4]
+0x422a6e:	mov	edx, dword ptr [edx + 0xc]
+0x422a71:	mov	byte ptr [edx], 0xe9
+0x422a74:	add	edx, 5
+0x422a77:	sub	ecx, edx
+0x422a79:	mov	dword ptr [edx - 4], ecx
+0x422a7c:	xor	eax, eax
+0x422a7e:	ret	
+addr:0x422ab5  reachtimes:1  size:42  bytes:5a8bf850528b338b432003c28b08894b208b431c03c28b08894b1c03f28b4b0c03ca8d431c505756ffd1
+0x422ab5:	pop	edx
+0x422ab6:	mov	edi, eax
+0x422ab8:	push	eax
+0x422ab9:	push	edx
+0x422aba:	mov	esi, dword ptr [ebx]
+0x422abc:	mov	eax, dword ptr [ebx + 0x20]
+0x422abf:	add	eax, edx
+0x422ac1:	mov	ecx, dword ptr [eax]
+0x422ac3:	mov	dword ptr [ebx + 0x20], ecx
+0x422ac6:	mov	eax, dword ptr [ebx + 0x1c]
+0x422ac9:	add	eax, edx
+0x422acb:	mov	ecx, dword ptr [eax]
+0x422acd:	mov	dword ptr [ebx + 0x1c], ecx
+0x422ad0:	add	esi, edx
+0x422ad2:	mov	ecx, dword ptr [ebx + 0xc]
+0x422ad5:	add	ecx, edx
+0x422ad7:	lea	eax, [ebx + 0x1c]
+0x422ada:	push	eax
+0x422adb:	push	edi
+0x422adc:	push	esi
+0x422add:	call	ecx
+addr:0x422adf  reachtimes:1  size:29  bytes:5a580343088bf8528bf08b46fc83c0042bf08956088b4b0c894e14ffd7
+0x422adf:	pop	edx
+0x422ae0:	pop	eax
+0x422ae1:	add	eax, dword ptr [ebx + 8]
+0x422ae4:	mov	edi, eax
+0x422ae6:	push	edx
+0x422ae7:	mov	esi, eax
+0x422ae9:	mov	eax, dword ptr [esi - 4]
+0x422aec:	add	eax, 4
+0x422aef:	sub	esi, eax
+0x422af1:	mov	dword ptr [esi + 8], edx
+0x422af4:	mov	ecx, dword ptr [ebx + 0xc]
+0x422af7:	mov	dword ptr [esi + 0x14], ecx
+0x422afa:	call	edi
+addr:0x422afc  reachtimes:1  size:14  bytes:89853f1300108bf08b4b145aeb0c
+0x422afc:	mov	dword ptr [ebp + 0x1000133f], eax
+0x422b02:	mov	esi, eax
+0x422b04:	mov	ecx, dword ptr [ebx + 0x14]
+0x422b07:	pop	edx
+0x422b08:	jmp	0x422b16
+addr:0x422b16  reachtimes:1  size:10  bytes:8bc65a5e5f595b5dffe0
+0x422b16:	mov	eax, esi
+0x422b18:	pop	edx
+0x422b19:	pop	esi
+0x422b1a:	pop	edi
+0x422b1b:	pop	ecx
+0x422b1c:	pop	ebx
+0x422b1d:	pop	ebp
+0x422b1e:	jmp	eax

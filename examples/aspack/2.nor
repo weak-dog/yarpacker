@@ -1,0 +1,869 @@
+addr:0x424f5f  reachtimes:51158  size:16  bytes:8bd02bd1408a128850ff8b163bc272f0
+mov reg32, reg32
+sub reg32, reg32
+inc reg32
+mov reg8, byte ptr mem
+mov byte ptr mem, reg8
+mov reg32, dword ptr mem
+cmp reg32, reg32
+jb val
+addr:0x424131  reachtimes:34867  size:5  bytes:ac3ce8740a
+lodsb reg8, byte ptr mem
+cmp reg8, val
+je val
+addr:0x42413c  reachtimes:34113  size:4  bytes:4349ebeb
+inc reg32
+dec reg32
+jmp val
+addr:0x4249c8  reachtimes:11960  size:14  bytes:5153568bf1578b06837804087230
+push reg32
+push reg32
+push regidx
+mov regidx, reg32
+push regidx
+mov reg32, dword ptr mem
+cmp dword ptr mem, val
+jb val
+addr:0x424a06  reachtimes:11960  size:27  bytes:8b50048b4008b9080000002bcad3e88b4e242500feff003bc17314
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+mov reg32, val
+sub reg32, reg32
+shr reg32, reg8
+mov reg32, dword ptr mem
+and reg32, val
+cmp reg32, reg32
+jae val
+addr:0x424a70  reachtimes:11960  size:44  bytes:8b0e8b790403fa8979048b1c96b9180000002bc32bca5fd3e88b4c964403c18b8e880000005e5b8b048159c3
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+add regidx, reg32
+mov dword ptr mem, regidx
+mov reg32, dword ptr mem
+mov reg32, val
+sub reg32, reg32
+sub reg32, reg32
+pop regidx
+shr reg32, reg8
+mov reg32, dword ptr mem
+add reg32, reg32
+mov reg32, dword ptr mem
+pop regidx
+pop reg32
+mov reg32, dword ptr mem
+pop reg32
+ret
+addr:0x4249d6  reachtimes:8645  size:48  bytes:8b088a11418854240c89088b48088b54240cc1e10881e2ff0000000bca8b500483c2f88948088bca89500483f90873d0
+mov reg32, dword ptr mem
+mov reg8, byte ptr mem
+inc reg32
+mov byte ptr mem, reg8
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+shl reg32, val
+and reg32, val
+or reg32, reg32
+mov reg32, dword ptr mem
+add reg32, val
+mov dword ptr mem, reg32
+mov reg32, reg32
+mov dword ptr mem, reg32
+cmp reg32, val
+jae val
+addr:0x424a21  reachtimes:8590  size:20  bytes:8b968c0000008bc8c1e91033db8a1c118bd3eb3b
+mov reg32, dword ptr mem
+mov reg32, reg32
+shr reg32, val
+xor reg32, reg32
+mov reg8, byte ptr mem
+mov reg32, reg32
+jmp val
+addr:0x424d10  reachtimes:5665  size:8  bytes:5e81ee77ca4600c3
+pop regidx
+sub regidx, val
+ret
+addr:0x42487c  reachtimes:5432  size:21  bytes:33c98a0c388b5c8c288d4c8c2843403bc5891972eb
+xor reg32, reg32
+mov reg8, byte ptr mem
+mov reg32, dword ptr mem
+lea reg32, mem
+inc reg32
+inc reg32
+cmp reg32, regptr
+mov dword ptr mem, reg32
+jb val
+addr:0x42497e  reachtimes:5432  size:14  bytes:8bb424ac000000
+mov regidx, dword ptr mem
+mov reg8, byte ptr mem
+test reg8, reg8
+je val
+addr:0x42498c  reachtimes:5432  size:45  bytes:8bba8800000025ff0000008b448468890c8733c08a04318b7c84688d448468478938
+mov regidx, dword ptr mem
+and reg32, val
+mov reg32, dword ptr mem
+mov dword ptr mem, reg32
+xor reg32, reg32
+mov reg8, byte ptr mem
+mov regidx, dword ptr mem
+lea reg32, mem
+inc regidx
+mov dword ptr mem, regidx
+mov reg32, dword ptr mem
+inc reg32
+cmp reg32, reg32
+jb val
+addr:0x424d4c  reachtimes:5306  size:19  bytes:8b0e88018b0e4147890e897c2410e929020000
+mov reg32, dword ptr mem
+mov byte ptr mem, reg8
+mov reg32, dword ptr mem
+inc reg32
+inc regidx
+mov dword ptr mem, reg32
+mov dword ptr mem, regidx
+jmp val
+addr:0x424c53  reachtimes:3892  size:11  bytes:c644342400464885c07fed
+mov byte ptr mem, val
+inc regidx
+dec reg32
+test reg32, reg32
+jg val
+addr:0x424d6a  reachtimes:3835  size:29  bytes:0500ffffff8be883e007c1ed038d500283f807895424140f8594000000
+add reg32, val
+mov regptr, reg32
+and reg32, val
+shr regptr, val
+lea reg32, mem
+cmp reg32, val
+mov dword ptr mem, reg32
+jne val
+addr:0x424e07  reachtimes:3835  size:41  bytes:8a8c30b2c446005e8b44241403ca03c189442414
+mov reg8, byte ptr mem
+pop regidx
+mov reg32, dword ptr mem
+add reg32, reg32
+add reg32, reg32
+mov dword ptr mem, reg32
+mov reg8, byte ptr mem
+mov reg32, dword ptr mem
+xor reg32, reg32
+push regidx
+call val
+addr:0x424e30  reachtimes:3835  size:14  bytes:8a9435eac446005e84c08bfa7476
+mov reg8, byte ptr mem
+pop regidx
+test reg8, reg8
+mov regidx, reg32
+je val
+addr:0x424f2e  reachtimes:3835  size:49  bytes:8b86540200008b96500200008d4bfd898658020000899654020000
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+lea reg32, mem
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+inc reg32
+lea reg32, mem
+cmp reg32, reg32
+mov dword ptr mem, reg32
+jae val
+addr:0x424f6f  reachtimes:3835  size:14  bytes:8b44241003c7894424108bf8eb0b
+mov reg32, dword ptr mem
+add reg32, regidx
+mov dword ptr mem, reg32
+mov regidx, reg32
+jmp val
+addr:0x424eeb  reachtimes:3213  size:41  bytes:8b56088b460cb9080000002bca03d7d3e8b9180000008956082bcf25ffffff00d3e803d8
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+mov reg32, val
+sub reg32, reg32
+add reg32, regidx
+shr reg32, reg8
+mov reg32, val
+mov dword ptr mem, reg32
+sub reg32, regidx
+and reg32, val
+shr reg32, reg8
+add reg32, reg32
+cmp reg32, val
+jae val
+addr:0x424a3a  reachtimes:3071  size:10  bytes:3b46281bd283c20aeb2c
+cmp reg32, dword ptr mem
+sbb reg32, reg32
+add reg32, val
+jmp val
+addr:0x424eba  reachtimes:2812  size:49  bytes:8b46048b560cc1e2088a0840884c24208b4e088946048b44242025ff00000083c1f80bd08bc183f80889560c894e0873cf
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+shl reg32, val
+mov reg8, byte ptr mem
+inc reg32
+mov byte ptr mem, reg8
+mov reg32, dword ptr mem
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+and reg32, val
+add reg32, val
+or reg32, reg32
+mov reg32, reg32
+cmp reg32, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+jae val
+addr:0x424be9  reachtimes:1359  size:21  bytes:8b8b600200008a143102d080e20f8854342446eb60
+mov reg32, dword ptr mem
+mov reg8, byte ptr mem
+add reg8, reg8
+and reg8, val
+mov byte ptr mem, reg8
+inc regidx
+jmp val
+addr:0x424f14  reachtimes:971  size:11  bytes:8b8c9e5002000085db7430
+mov reg32, dword ptr mem
+test reg32, reg32
+je val
+addr:0x424149  reachtimes:754  size:20  bytes:2400c1c0182bc3890683c30583c60483e905ebce
+and reg8, val
+rol reg32, val
+sub reg32, reg32
+mov dword ptr mem, reg32
+add reg32, val
+add regidx, val
+sub reg32, val
+jmp val
+addr:0x424d92  reachtimes:712  size:11  bytes:8b4e0833db56e86dffffff
+mov reg32, dword ptr mem
+xor reg32, reg32
+push regidx
+call val
+addr:0x424d9d  reachtimes:712  size:13  bytes:8a9c30cec446005e83f9087232
+mov reg8, byte ptr mem
+pop regidx
+cmp reg32, val
+jb val
+addr:0x424ddc  reachtimes:712  size:43  bytes:8b7e088b560cb9080000002bcf03fbd3eab918000000897e082bcb81e2ffffff00d3ea33c956e803ffffff
+mov regidx, dword ptr mem
+mov reg32, dword ptr mem
+mov reg32, val
+sub reg32, regidx
+add regidx, reg32
+shr reg32, reg8
+mov reg32, val
+mov dword ptr mem, regidx
+sub reg32, reg32
+and reg32, val
+shr reg32, reg8
+xor reg32, reg32
+push regidx
+call val
+addr:0x424e43  reachtimes:622  size:11  bytes:8b46088d6ffd83f8087231
+mov reg32, dword ptr mem
+lea regptr, mem
+cmp reg32, val
+jb val
+addr:0x424e7f  reachtimes:622  size:46  bytes:8b46088b7e0cb9080000002bc803c5d3efb9180000008946082bcd81e7ffffff00d3ef8d8e30010000e81bfbffff
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+mov reg32, val
+sub reg32, reg32
+add reg32, regptr
+shr regidx, reg8
+mov reg32, val
+mov dword ptr mem, reg32
+sub reg32, regptr
+and regidx, val
+shr regidx, reg8
+lea reg32, mem
+call val
+addr:0x424ead  reachtimes:622  size:7  bytes:03c38d1cf8eb5b
+add reg32, reg32
+lea reg32, mem
+jmp val
+addr:0x424e4e  reachtimes:530  size:49  bytes:8b46048b560cc1e2088a0840884c241c8b4e088946048b44241c25ff00000083c1f80bd08bc183f80889560c894e0873cf
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+shl reg32, val
+mov reg8, byte ptr mem
+inc reg32
+mov byte ptr mem, reg8
+mov reg32, dword ptr mem
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+and reg32, val
+add reg32, val
+or reg32, reg32
+mov reg32, reg32
+cmp reg32, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+jae val
+addr:0x424891  reachtimes:420  size:68  bytes:b917000000897424288972048972448974246833ff8974241cc744241001000000894c24188d6a0889742414
+mov reg32, val
+mov dword ptr mem, regidx
+mov dword ptr mem, regidx
+mov dword ptr mem, regidx
+mov dword ptr mem, regidx
+xor regidx, regidx
+mov dword ptr mem, regidx
+mov dword ptr mem, val
+mov dword ptr mem, reg32
+lea regptr, mem
+mov dword ptr mem, regidx
+mov reg32, dword ptr mem
+shl reg32, reg8
+add regidx, reg32
+cmp regidx, val
+mov dword ptr mem, regidx
+ja val
+addr:0x4248d5  reachtimes:420  size:24  bytes:8b443428897d008b5d3c03c383f9108945408944346c7c4d
+mov reg32, dword ptr mem
+mov dword ptr mem, regidx
+mov reg32, dword ptr mem
+add reg32, reg32
+cmp reg32, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+jl val
+addr:0x424a9c  reachtimes:406  size:23  bytes:5356578bf933d233c08db768020000
+push reg32
+push regidx
+push regidx
+mov regidx, reg32
+xor reg32, reg32
+xor reg32, reg32
+lea regidx, mem
+mov dword ptr mem, reg32
+push regidx
+call val
+addr:0x424ab3  reachtimes:406  size:26  bytes:8a8c30eac446005ebb0100000083c604d3e303d34083f83a72de
+mov reg8, byte ptr mem
+pop regidx
+mov reg32, val
+add regidx, val
+shl reg32, reg8
+add reg32, reg32
+inc reg32
+cmp reg32, val
+jb val
+addr:0x424daa  reachtimes:366  size:50  bytes:8b4e048a114188542418894e048b4e0c8b542418c1e10881e2ff0000000bca8b560883c2f8894e0c8bca89560883f90873ce
+mov reg32, dword ptr mem
+mov reg8, byte ptr mem
+inc reg32
+mov byte ptr mem, reg8
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+shl reg32, val
+and reg32, val
+or reg32, reg32
+mov reg32, dword ptr mem
+add reg32, val
+mov dword ptr mem, reg32
+mov reg32, reg32
+mov dword ptr mem, reg32
+cmp reg32, val
+jae val
+addr:0x4247bc  reachtimes:266  size:15  bytes:518bd156b90800000057394a047235
+push reg32
+mov reg32, reg32
+push regidx
+mov reg32, val
+push regidx
+cmp dword ptr mem, reg32
+jb val
+addr:0x424f1f  reachtimes:228  size:15  bytes:8b965002000089949e50020000eb1b
+mov reg32, dword ptr mem
+mov dword ptr mem, reg32
+jmp val
+addr:0x4248ed  reachtimes:224  size:58  bytes:8b75008b4424108b5c241c8bba8c000000c1ee108bce25ff0000002bcb03fb8ad88bd18afb8974241c8bc38b742414c1e010668bc3c1e902f3ab8bca8b54242083e103f3aa8b7c24248b4c2418
+mov regidx, dword ptr mem
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+shr regidx, val
+mov reg32, regidx
+and reg32, val
+sub reg32, reg32
+add regidx, reg32
+mov reg8, reg8
+mov reg32, reg32
+mov reg8, reg8
+mov dword ptr mem, regidx
+mov reg32, reg32
+mov regidx, dword ptr mem
+shl reg32, val
+mov reg16, reg16
+shr reg32, val
+rep stosd dword ptr es:mem, reg32
+addr:0x42493a  reachtimes:196  size:33  bytes:8b44241083c604404983c50483f90989442410894c2418897424140f8d62ffffff
+mov reg32, dword ptr mem
+add regidx, val
+inc reg32
+dec reg32
+add regptr, val
+cmp reg32, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, regidx
+jge val
+addr:0x4247cb  reachtimes:155  size:52  bytes:53bef8ffffff
+push reg32
+mov regidx, val
+mov reg32, dword ptr mem
+mov reg8, byte ptr mem
+inc reg32
+mov byte ptr mem, reg8
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+shl reg32, val
+and regidx, val
+or reg32, regidx
+mov regidx, dword ptr mem
+add regidx, regidx
+mov dword ptr mem, reg32
+mov reg32, regidx
+mov dword ptr mem, regidx
+cmp reg32, reg32
+jae val
+addr:0x424bb0  reachtimes:133  size:10  bytes:884434104683fe1372ed
+mov byte ptr mem, reg8
+inc regidx
+cmp regidx, val
+jb val
+addr:0x424800  reachtimes:132  size:39  bytes:8b72048b42088b7c24102bced3e8b9180000002bcf25ffffff00d3e803f75f8972045e59c20400
+mov regidx, dword ptr mem
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+sub reg32, regidx
+shr reg32, reg8
+mov reg32, val
+sub reg32, regidx
+and reg32, val
+shr reg32, reg8
+add regidx, regidx
+pop regidx
+mov dword ptr mem, regidx
+pop regidx
+pop reg32
+ret val
+addr:0x424ba7  reachtimes:126  size:9  bytes:6a048bcde80cfcffff
+push val
+mov reg32, regptr
+call val
+addr:0x4242aa  reachtimes:96  size:28  bytes:8985c1050000c785c505000000000000
+mov dword ptr mem, reg32
+mov dword ptr mem, val
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+test reg32, reg32
+jne val
+addr:0x4242c9  reachtimes:96  size:29  bytes:03c20385c50500008b188b7e1003fa03bdc505000085db0f84a5000000
+add reg32, reg32
+add reg32, dword ptr mem
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+add regidx, reg32
+add regidx, dword ptr mem
+test reg32, reg32
+je val
+addr:0x4242ee  reachtimes:92  size:24  bytes:03da4343
+add reg32, reg32
+inc reg32
+inc reg32
+push reg32
+and reg32, val
+push reg32
+push dword ptr mem
+call dword ptr mem
+addr:0x424306  reachtimes:92  size:5  bytes:85c05b7572
+test reg32, reg32
+pop reg32
+jne val
+addr:0x42437d  reachtimes:92  size:14  bytes:89078385c505000004e92fffffff
+mov dword ptr mem, reg32
+add dword ptr mem, val
+jmp val
+addr:0x424c2d  reachtimes:64  size:9  bytes:6a038bcde886fbffff
+push val
+mov reg32, regptr
+call val
+addr:0x424c18  reachtimes:48  size:14  bytes:8a4c342348884c34244685c07fea
+mov reg8, byte ptr mem
+dec reg32
+mov byte ptr mem, reg8
+inc regidx
+test reg32, reg32
+jg val
+addr:0x424c3b  reachtimes:48  size:9  bytes:6a078bcde878fbffff
+push val
+mov reg32, regptr
+call val
+addr:0x424827  reachtimes:28  size:37  bytes:8b4424048b5424088981840000008991880000008d048289818c0000000500010000c20800
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+lea reg32, mem
+mov dword ptr mem, reg32
+add reg32, val
+ret val
+addr:0x42484c  reachtimes:28  size:33  bytes:81ec980000005355568bd157b90f0000008baa8400000033c08d7c242c33f6f3ab8bbc24ac0000003bee895424207615
+sub regptr, val
+push reg32
+push regptr
+push regidx
+mov reg32, reg32
+push regidx
+mov reg32, val
+mov regptr, dword ptr mem
+xor reg32, reg32
+lea regidx, mem
+xor regidx, regidx
+rep stosd dword ptr es:mem, reg32
+addr:0x424972  reachtimes:28  size:12  bytes:8b828400000033c985c0763b
+mov reg32, dword ptr mem
+xor reg32, reg32
+test reg32, reg32
+jbe val
+addr:0x4249b9  reachtimes:28  size:15  bytes:5f5e5db0015b81c498000000c20400
+pop regidx
+pop regidx
+pop regptr
+mov reg8, val
+pop reg32
+add regptr, val
+ret val
+addr:0x424c00  reachtimes:14  size:9  bytes:6a028bcde8b3fbffff
+push val
+mov reg32, regptr
+call val
+addr:0x424c09  reachtimes:14  size:7  bytes:83c00385c07e4e
+add reg32, val
+test reg32, reg32
+jle val
+addr:0x424cdd  reachtimes:12  size:6  bytes:4083f80872f0
+inc reg32
+cmp reg32, val
+jb val
+addr:0x4243d4  reachtimes:10  size:10  bytes:83c7283b470ce0f8
+add regidx, val
+cmp reg32, dword ptr mem
+loopne val
+jne val
+addr:0x4240cd  reachtimes:8  size:20  bytes:898554010000
+mov dword ptr mem, reg32
+mov reg32, dword ptr mem
+add reg32, val
+je val
+addr:0x424198  reachtimes:8  size:12  bytes:83c60c833e000f852fffffff
+add regidx, val
+cmp dword ptr mem, val
+jne val
+addr:0x4243b9  reachtimes:8  size:27  bytes:ff7754560fb74f060fb747148d7c07f08db5dd050000
+push dword ptr mem
+push regidx
+movzx reg32, word ptr mem
+movzx reg32, word ptr mem
+lea regidx, mem
+lea regidx, mem
+lodsd reg32, dword ptr mem
+test reg32, reg32
+je val
+addr:0x4240e1  reachtimes:7  size:13  bytes:6a046800100000506a00ff5551
+push val
+push val
+push reg32
+push val
+call dword ptr mem
+addr:0x4240ee  reachtimes:7  size:31  bytes:898550010000568b1e039da0040000ffb554010000ff76045053e8d3050000
+mov dword ptr mem, reg32
+push regidx
+mov reg32, dword ptr mem
+add reg32, dword ptr mem
+push dword ptr mem
+push dword ptr mem
+push reg32
+push reg32
+call val
+addr:0x42416b  reachtimes:7  size:21  bytes:8bc88b3e03bda00400008bb550010000c1f902f3a58bc883e103f3a45e68008000006a00ffb550010000ff555e
+mov reg32, reg32
+mov regidx, dword ptr mem
+add regidx, dword ptr mem
+mov regidx, dword ptr mem
+sar reg32, val
+rep movsd dword ptr es:mem
+addr:0x4243de  reachtimes:7  size:11  bytes:4151566a01f64607e07403
+inc reg32
+push reg32
+push regidx
+push val
+test byte ptr mem, val
+je val
+addr:0x4243fb  reachtimes:7  size:17  bytes:c1242404
+shl dword ptr mem, val
+push dword ptr mem
+add reg32, dword ptr mem
+push reg32
+call dword ptr mem
+addr:0x42440c  reachtimes:7  size:11  bytes:59adad894724e2bb
+pop reg32
+lodsd reg32, dword ptr mem
+lodsd reg32, dword ptr mem
+mov dword ptr mem, reg32
+loop val
+call dword ptr mem
+addr:0x4246e0  reachtimes:7  size:20  bytes:8b44241081ec540300008d4c240450e8a8030000
+mov reg32, dword ptr mem
+sub regptr, val
+lea reg32, mem
+push reg32
+call val
+addr:0x4246f4  reachtimes:7  size:25  bytes:8b8c245c0300008b94245803000051528d4c240ce80d040000
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+push reg32
+push reg32
+lea reg32, mem
+call val
+addr:0x42471b  reachtimes:7  size:21  bytes:8b8c24600300008d042450518d4c240ce8e8050000
+mov reg32, dword ptr mem
+lea reg32, mem
+push reg32
+push reg32
+lea reg32, mem
+call val
+addr:0x42473e  reachtimes:7  size:12  bytes:8b042481c454030000c21000
+mov reg32, dword ptr mem
+add regptr, val
+ret val
+addr:0x424acd  reachtimes:7  size:18  bytes:8b4424108d4f105068d1020000e848fdffff
+mov reg32, dword ptr mem
+lea reg32, mem
+push reg32
+push val
+call val
+addr:0x424adf  reachtimes:7  size:14  bytes:506a1c8d8fa0000000e83afdffff
+push reg32
+push val
+lea reg32, mem
+call val
+addr:0x424aed  reachtimes:7  size:14  bytes:506a088d8f30010000e82cfdffff
+push reg32
+push val
+lea reg32, mem
+call val
+addr:0x424afb  reachtimes:7  size:14  bytes:506a138d8fc0010000e81efdffff
+push reg32
+push val
+lea reg32, mem
+call val
+addr:0x424b09  reachtimes:7  size:17  bytes:8987600200005f5e05f50200005bc20400
+mov dword ptr mem, reg32
+pop regidx
+pop regidx
+add reg32, val
+pop reg32
+ret val
+addr:0x424b1a  reachtimes:7  size:85  bytes:8b4424088bd18b4c24045789028d42048908c74004200000008942108982a00000008982300100008982c001000033c0b9bd0000008982500200008982540200008982580200008bba6002000089825c020000f3ab8bcaaae804000000
+mov reg32, dword ptr mem
+mov reg32, reg32
+mov reg32, dword ptr mem
+push regidx
+mov dword ptr mem, reg32
+lea reg32, mem
+mov dword ptr mem, reg32
+mov dword ptr mem, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+xor reg32, reg32
+mov reg32, val
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov regidx, dword ptr mem
+mov dword ptr mem, reg32
+rep stosd dword ptr es:mem, reg32
+addr:0x424b7b  reachtimes:7  size:24  bytes:81ec0c030000538bd955568d6b04576a018bcde829fcffff
+sub regptr, val
+push reg32
+mov reg32, reg32
+push regptr
+push regidx
+lea regptr, mem
+push regidx
+push val
+mov reg32, regptr
+call val
+addr:0x424b97  reachtimes:7  size:13  bytes:8bbb60020000b9bd000000f3abaa
+mov regidx, dword ptr mem
+mov reg32, val
+rep stosd dword ptr es:mem, reg32
+addr:0x424bba  reachtimes:7  size:18  bytes:8dbbc00100008d442410508bcfe880fcffff
+lea regidx, mem
+lea reg32, mem
+push reg32
+mov reg32, regidx
+call val
+addr:0x424c6a  reachtimes:7  size:13  bytes:8d5424248d4b1052e8d5fbffff
+lea reg32, mem
+lea reg32, mem
+push reg32
+call val
+addr:0x424c86  reachtimes:7  size:19  bytes:8d8424f50200008d8ba000000050e8b3fbffff
+lea reg32, mem
+lea reg32, mem
+push reg32
+call val
+addr:0x424ca8  reachtimes:7  size:19  bytes:8d8c2411030000518d8b30010000e891fbffff
+lea reg32, mem
+push reg32
+lea reg32, mem
+call val
+addr:0x424cca  reachtimes:7  size:19  bytes:c683640200000033c0
+mov byte ptr mem, val
+xor reg32, reg32
+cmp byte ptr mem, val
+jne val
+addr:0x424ce5  reachtimes:7  size:24  bytes:c6836402000001
+mov byte ptr mem, val
+mov regidx, dword ptr mem
+lea regidx, mem
+mov reg32, val
+rep movsb byte ptr es:mem
+addr:0x424d18  reachtimes:7  size:37  bytes:83ec148b44241c535556c700000000008b4424245733ff85c08bf1897c24100f865b020000
+sub regptr, val
+mov reg32, dword ptr mem
+push reg32
+push regptr
+push regidx
+mov dword ptr mem, val
+mov reg32, dword ptr mem
+push regidx
+xor regidx, regidx
+test reg32, reg32
+mov regidx, reg32
+mov dword ptr mem, regidx
+jbe val
+addr:0x424f92  reachtimes:7  size:18  bytes:8b44242c8938
+mov reg32, dword ptr mem
+mov dword ptr mem, regidx
+pop regidx
+pop regidx
+pop regptr
+mov reg8, val
+pop reg32
+add regptr, val
+ret val
+addr:0x42427c  reachtimes:5  size:24  bytes:be60f201008b95a004000003f2
+mov regidx, val
+mov reg32, dword ptr mem
+add regidx, reg32
+mov reg32, dword ptr mem
+test reg32, reg32
+je val
+addr:0x424294  reachtimes:4  size:11  bytes:03c28bd850ff95c10f0000
+add reg32, reg32
+mov reg32, reg32
+push reg32
+call dword ptr mem
+addr:0x42438b  reachtimes:4  size:22  bytes:890689460c89461083c6148b95a0040000e9e8feffff
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+mov dword ptr mem, reg32
+add regidx, val
+mov reg32, dword ptr mem
+jmp val
+addr:0x424042  reachtimes:3  size:19  bytes:8985a40400008bf08d7d51
+mov dword ptr mem, reg32
+mov regidx, reg32
+lea regidx, mem
+push regidx
+push regidx
+call dword ptr mem
+addr:0x42400a  reachtimes:1  size:4  bytes:5d4555c3
+pop regptr
+inc regptr
+push regptr
+ret
+addr:0x424014  reachtimes:1  size:33  bytes:5dbbedffffff03dd81eb0040020083bda004000000899da00400000f85e3030000
+pop regptr
+mov reg32, val
+add reg32, regptr
+sub reg32, val
+cmp dword ptr mem, val
+mov dword ptr mem, reg32
+jne val
+addr:0x424035  reachtimes:1  size:13  bytes:8d85ac04000050ff95c10f0000
+lea reg32, mem
+push reg32
+call dword ptr mem
+addr:0x42408d  reachtimes:1  size:10  bytes:8b9dad0500000bdb7416
+mov reg32, dword ptr mem
+or reg32, reg32
+je val
+addr:0x4240ad  reachtimes:1  size:15  bytes:8db5dd050000833e000f8416010000
+lea regidx, mem
+cmp dword ptr mem, val
+je val
+addr:0x4240bc  reachtimes:1  size:17  bytes:6a04680010000068001800006a00ff5551
+push val
+push val
+push val
+push val
+call dword ptr mem
+addr:0x424114  reachtimes:1  size:27  bytes:fe85fb000000505156538bc883e9058bb55001000033db
+inc byte ptr mem
+push reg32
+push reg32
+push regidx
+push reg32
+mov reg32, reg32
+sub reg32, val
+mov regidx, dword ptr mem
+xor reg32, reg32
+or reg32, reg32
+je val
+addr:0x42415d  reachtimes:1  size:6  bytes:5b5e5958
+pop reg32
+pop regidx
+pop reg32
+pop reg32
+jmp val
+addr:0x4241a4  reachtimes:1  size:16  bytes:68008000006a00ffb554010000ff555e
+push val
+push val
+push dword ptr mem
+call dword ptr mem
+addr:0x4241b4  reachtimes:1  size:10  bytes:8b9dad0500000bdb7414
+mov reg32, dword ptr mem
+or reg32, reg32
+je val
+addr:0x4241d2  reachtimes:1  size:16  bytes:8b95a00400008b85a90500002bd07479
+mov reg32, dword ptr mem
+mov reg32, dword ptr mem
+sub reg32, reg32
+je val
+addr:0x42425b  reachtimes:1  size:16  bytes:8b95a00400008bb5bd0500000bf67411
+mov reg32, dword ptr mem
+mov regidx, dword ptr mem
+or regidx, regidx
+je val
+addr:0x4243a1  reachtimes:1  size:24  bytes:8bb5a00400008b7e3c03fe515451546a04ff775456ff556a
+mov regidx, dword ptr mem
+mov regidx, dword ptr mem
+add regidx, regidx
+push reg32
+push regptr
+push reg32
+push regptr
+push val
+push dword ptr mem
+push regidx
+call dword ptr mem
+addr
