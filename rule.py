@@ -88,7 +88,7 @@ def flat(norFilePath):
     fp.close()
 
 if __name__ == '__main__':
-    exeDir="D://work//yarpacker//examples//upx//"
+    exeDir="D://work//yarpacker//examples//kkrunchy//"
     configureNum=2
     for i in range(configureNum):
         exeFilePath1 = exeDir + "p" + str(i + 1) + "_1.exe"

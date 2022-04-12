@@ -105,7 +105,7 @@ def processRules(ruleStrs,yaraPath):
     return processResult,fullReverse
 
 def genYar(rulePath,ruleName,strList,logic):
-    f=open(rulePath,"a")
+    f=open(rulePath,"w")
     f.write("rule " + ruleName + "\n")
     f.write("{\n")
     f.write("\tstrings:\n")
@@ -188,14 +188,20 @@ def normalizeData(data):
         return [1]*len(data)
 
 if __name__=="__main__":
-    sampleDir="D://work//yarpacker//examples//upx//"
+    sampleDir="D://work//yarpacker//examples//kkrunchy//"
     configuration=2
+    choosed=[]
     for i in range(configuration):
-        packerName="upx"+str(i+1)
+        packerName="kkrunchy"+str(i+1)
         simPart=sim(sampleDir+"p"+str(i+1)+"_1.json", sampleDir+"p"+str(i+1)+"_2.json", 0.9)
         processRes, fullReverse = processRules(simPart, sampleDir)
         index = genRules(sampleDir, packerName, processRes)
         checkRes = check(sampleDir, processRes, fullReverse, index,i)
-        choosed = chooseRule(checkRes)
-        genYar(sampleDir + "upx.yar", packerName, choosed, "and")
+        if len(choosed):
+            for cr in choosed:
+                if cr not in choosed:
+                    choosed.append(cr)
+        else:
+            choosed=chooseRule(checkRes)
+    genYar(sampleDir + "kkrunchy.yar", "kkrunchy", choosed, "or")
 
