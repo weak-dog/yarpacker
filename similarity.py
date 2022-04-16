@@ -17,6 +17,7 @@ def sim(filePath1,filePath2,fre=0.9,sim=0.95):
     for i in range(len(l1)):
         for j in range(min(10, len(l3))):
             similarity = difflib.SequenceMatcher(None, l1[i][0], l3[j][0]).ratio()
+            print(i,k+j,similarity)
             if similarity > sim:
                 blockPairs.append([i, k + j, l1[i][1]])
                 l3.remove(l3[j])
@@ -188,11 +189,11 @@ def normalizeData(data):
         return [1]*len(data)
 
 if __name__=="__main__":
-    sampleDir="D://work//yarpacker//examples//kkrunchy//"
-    configuration=2
+    sampleDir="D://work//yarpacker//examples//upx//"
+    configuration=9
     choosed=[]
     for i in range(configuration):
-        packerName="kkrunchy"+str(i+1)
+        packerName="upx"+str(i+1)
         simPart=sim(sampleDir+"p"+str(i+1)+"_1.json", sampleDir+"p"+str(i+1)+"_2.json", 0.9)
         processRes, fullReverse = processRules(simPart, sampleDir)
         index = genRules(sampleDir, packerName, processRes)
@@ -203,5 +204,5 @@ if __name__=="__main__":
                     choosed.append(cr)
         else:
             choosed=chooseRule(checkRes)
-    genYar(sampleDir + "kkrunchy.yar", "kkrunchy", choosed, "or")
+    genYar(sampleDir + "upx.yar", "upx", choosed, "or")
 

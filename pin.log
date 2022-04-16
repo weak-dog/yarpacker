@@ -1,5 +1,5 @@
 Pin: pin-3.21-98484-e7cd811fd
 Copyright 2002-2020 Intel Corporation.
-E:  [tid:6208] Cannot execute file. System error: System error 2 : 系统找不到指定的文件。
-. File name: "D://work//yarpacker//examples//kkrunchy//p3_2.exe"
+E:  [tid:38136] Cannot execute file. System error: System error 2 : 系统找不到指定的文件。
+. File name: "D:C:"
 E:  Pin is exiting due to fatal error

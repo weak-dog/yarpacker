@@ -11,7 +11,7 @@ def genUpxSample():
         outPath3 = "p" + str(i + 1) + "_3.exe"
         command1 = "upx 1.exe " + configuration[i] + " -o " + outPath1
         command2 = "upx 2.exe " + configuration[i] + " -o " + outPath2
-        command3 = "upx test.exe " + configuration[i] + " -o " + outPath3
+        command3 = "upx 3.exe " + configuration[i] + " -o " + outPath3
         os.system(command1)
         os.system(command2)
         os.system(command3)
@@ -50,5 +50,5 @@ def genPinFile(fileNameList,pathDir):
         os.system(command)
 
 if __name__=="__main__":
-    sampleNames,pathDir=genKkrunchySample()
+    sampleNames,pathDir=genUpxSample()
     genPinFile(sampleNames,pathDir)
